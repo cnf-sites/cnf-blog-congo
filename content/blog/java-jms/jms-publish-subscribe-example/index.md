@@ -14,6 +14,10 @@ In a publish/subscribe (pub/sub) product or application, clients address message
 
 The following post introduces the basic concepts of JMS point-to-point messaging and illustrates them with a code sample using ActiveMQ and Maven.
 
+{{< alert "lightbulb" >}}
+If you want to learn more about JMS - head on over to the [JMS tutorials]({{< ref "/tutorials/java-jms-tutorials" >}}) page.
+{{< /alert >}}
+
 ## Publish/Subscribe Messaging
 
 ![jms publish subscribe messaging](jms-publish-subscribe-messaging.png)
@@ -27,7 +31,7 @@ The JMS API relaxes this timing dependency mentioned in the second bullet to som
 
 ## ActiveMQ Example
 
-Let's illustrate the above characteristics by creating a message producer that sends a message containing a first and last name to a topic. In turn, a message consumer will read the message and transform it into a greeting. The code is very similar to the [JMS Hello World example](/jms-hello-world-activemq-maven.html) but contains a few key differences explained below.
+Let's illustrate the above characteristics by creating a message producer that sends a message containing a first and last name to a topic. In turn, a message consumer will read the message and transform it into a greeting. The code is very similar to the [JMS Hello World example]({{< ref "/blog/java-jms/jms-activemq-example" >}}) but contains a few key differences explained below.
 
 Tools used:
 
@@ -677,7 +681,7 @@ public class DurableSubscriberTest {
 }
 ```
 
-Make sure a default [ActiveMQ message broker is up and running](/jms-apache-activemq-installation.html), open a command prompt and execute following Maven command:
+Make sure a default [ActiveMQ message broker is up and running]({{< ref "/blog/spring-jms/apache-activemq-download-install" >}}), open a command prompt and execute following Maven command:
 
 ``` bash
 mvn -Dtest=DurableSubscriberTest test

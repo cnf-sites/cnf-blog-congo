@@ -16,9 +16,13 @@ Priority levels are a powerful instrument on JMS messages which allow building r
 
 The following post explains the basics of JMS priority and illustrates them with a code sample using ActiveMQ and Maven.
 
+{{< alert "lightbulb" >}}
+If you want to learn more about JMS - head on over to the [JMS tutorials]({{< ref "/tutorials/java-jms-tutorials" >}}) page.
+{{< /alert >}}
+
 ## Setting JMS Message Priority Levels
 
-Message priority levels can be used to instruct the JMS provider to deliver urgent messages first. The message's priority is contained in the [JMSPriority header](/jms-message-types-properties-overview.html). There are ten levels of priority, ranging from 0 (lowest) to 9 (highest). If you do not specify a priority level, the default level is set to 4.
+Message priority levels can be used to instruct the JMS provider to deliver urgent messages first. The message's priority is contained in the [JMSPriority header]({{< ref "/blog/java-jms/jms-message-types-properties-overview#jms-message-headers" >}}). There are ten levels of priority, ranging from 0 (lowest) to 9 (highest). If you do not specify a priority level, the default level is set to 4.
 
 You can set the priority level in either of two ways:
 
@@ -350,7 +354,7 @@ public class ProducerTest {
 }
 ```
 
-Make sure an [ActiveMQ message broker is up and running](/jms-apache-activemq-installation.html), open a command prompt and execute following Maven command:
+Make sure an [ActiveMQ message broker is up and running]({{< ref "/blog/spring-jms/apache-activemq-download-install" >}}), open a command prompt and execute following Maven command:
 
 ``` bash
 mvn test

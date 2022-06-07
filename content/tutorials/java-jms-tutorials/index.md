@@ -36,13 +36,10 @@ It is a Java API that allows applications to create, send, receive, and read mes
 
 _If you would like to request a new tutorial, leave a comment below._
 
-* [JMS - Hello World using ActiveMQ](/jms-hello-world-activemq-maven.html)
-* [JMS - Point-to-Point messaging example using ActiveMQ and Maven](/jms-point-to-point-messaging-example-activemq-maven.html)
-* [JMS - Publish/Subscribe messaging example using ActiveMQ and Maven](/jms-publish-subscribe-messaging-example-activemq-maven.html)
-* [JMS - Message Types and Properties Overview](/jms-message-types-properties-overview.html)
-* [JMS - ActiveMQ Message Priority Example](/jms-activemq-message-priority-example.html)
-* [JMS - HermesJMS Download and Installation](/jms-hermesjms-download-installation.html)
-* [JMS - Apache ActiveMQ Installation](/jms-apache-activemq-installation.html)
+* [JMS ActiveMQ Example]({{< ref "/blog/java-jms/jms-activemq-example" >}})
+* [JMS Point-to-Point Example]({{< ref "/blog/java-jms/jms-point-to-point-example" >}})
+* [JMS Publish/Subscribe Example]({{< ref "/blog/java-jms/jms-publish-subscribe-example" >}})
+* [JMS Message Priority Example]({{< ref "/blog/java-jms/jms-message-priority-example" >}})
 
 ## References
 

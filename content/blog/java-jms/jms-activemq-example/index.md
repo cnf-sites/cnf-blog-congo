@@ -18,6 +18,10 @@ The current version of the JMS specification is version 1.1.
 
 The following post introduces the basic JMS concepts and illustrates them with a JMS Hello World example using ActiveMQ and Maven.
 
+{{< alert "lightbulb" >}}
+If you want to learn more about JMS - head on over to the [JMS tutorials]({{< ref "/tutorials/java-jms-tutorials" >}}) page.
+{{< /alert >}}
+
 To use JMS, we need to have a JMS provider that can manage the sessions, queues, and topics. Some examples of known JMS providers are [Apache ActiveMQ](http://activemq.apache.org/), WebSphere MQ from IBM or SonicMQ from Aurea Software. Starting from Java EE version 1.4, a JMS provider has to be contained in all Java EE application servers.
 
 ## The JMS API Programming Model
@@ -347,7 +351,7 @@ public class ProducerTest {
 }
 ```
 
-Make sure a default [ActiveMQ message broker is up and running](/jms-apache-activemq-installation.html), open a command prompt and execute following Maven command:
+Make sure a default [ActiveMQ message broker is up and running]({{< ref "/blog/spring-jms/apache-activemq-download-install" >}}), open a command prompt and execute following Maven command:
 
 ``` bash
 mvn test

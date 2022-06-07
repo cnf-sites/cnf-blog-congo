@@ -384,7 +384,7 @@ kafka:
   bootstrap-servers: ${spring.embedded.kafka.brokers}
 ```
 
-> Below test case can also be executed after you [install Kafka and Zookeeper]({{< ref "/blog/spring-kafka/apache-kafka-download-installation-windows" >}}) on your local system. Just comment out `@EmbeddedKafka` and change the `bootstrap-servers` property of the application properties file located in `src/test/resources` to the address of the local broker.
+> Below test case can also be executed after you [install Kafka and Zookeeper]({{< ref "/blog/spring-kafka/apache-kafka-download-install-windows" >}}) on your local system. Just comment out `@EmbeddedKafka` and change the `bootstrap-servers` property of the application properties file located in `src/test/resources` to the address of the local broker.
 
 ``` java
 package com.codenotfound.kafka;

@@ -431,7 +431,7 @@ Maven will download the dependencies, compile the code and run the unit test cas
 [INFO] ------------------------------------------------------------------------
 ```
 
-Above test case can also be executed after you [install Apache ActiveMQ]({{< ref "/blog/spring-jms/apache-activemq-installation" >}}) on your local system.
+Above test case can also be executed after you [install Apache ActiveMQ]({{< ref "/blog/spring-jms/apache-activemq-download-install" >}}) on your local system.
 
 Simply change the `activemq:broker-url` property to point to `tcp://localhost:61616` in case the broker is running on the default URL.
 
