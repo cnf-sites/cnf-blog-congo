@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a PrimeFaces logi
 url: /jsf-primefaces-spring-security-example.html
 date: 2018-01-17
 lastmod: 2018-12-07
-tags: ["posts", "primefaces", "jsf"]
+tags: ["posts", "primefaces", "jsf", "spring"]
 draft: false
 aliases:
   - /jsf-primefaces-spring-security.html

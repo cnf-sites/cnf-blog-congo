@@ -1,5 +1,5 @@
 ---
-title: "Apache CXF Tutorials"
+title: "Apache CXF JAX-WS Tutorials"
 summary: "Detailed step-by-step tutorials on how to use Apache CXF."
 url: /apache-cxf-jaxws-tutorials
 date: 2017-07-21
@@ -36,11 +36,10 @@ It is part of the [Apache Software Foundation](https://www.apache.org/). A decen
 
 _If you would like to request a new tutorial, leave a comment below._
 
-* [Apache CXF - Spring Boot SOAP Web Service Client Server Example](/apache-cxf-spring-boot-soap-web-service-client-server-example.html)
-* [Apache CXF - Feature vs Interceptor](/cxf-feature-vs-interceptor.html)
-* [Apache CXF - SOAP Header Example](/apache-cxf-soap-header-example.html)
-* [Apache CXF - Basic Authentication Example](/apache-cxf-basic-authentication-example.html)
-* [Apache CXF - Logging SOAP Request Response Fault Messages Example](/apache-cxf-logging-soap-request-response-fault-messages-example.html)
+* [Apache CXF JAX-WS Spring Boot Example]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-spring-boot-example" >}})
+* [Apache CXF JAX-WS SOAP Header Example]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-soap-header-example" >}})
+* [Apache CXF JAX-WS Basic Authentication Example]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-basic-authentication-example" >}})
+* [Apache CXF JAX-WS Log SOAP Messages Example]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-log-soap-messages-example" >}})
 
 ## References
 

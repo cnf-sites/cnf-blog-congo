@@ -13,7 +13,7 @@ draft: false
 In this tutorial, we will demonstrate how to configure CXF to log the SOAP request, response and fault XML using a logging `Interceptor` and `Feature`. The example uses the [Logback logging framework](https://logback.qos.ch/) in addition to Apache CXF, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF - JAX-WS tutorials page](/apache-cxf-jaxws-tutorials/).
+If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF JAX-WS tutorials page]({{< ref "/tutorials/apache-cxf-jaxws-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup
@@ -24,7 +24,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the project is based on a previous [CXF web service example](/apache-cxf-spring-boot-soap-web-service-client-server-example.html) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The setup of the project is based on a previous [CXF web service example]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-spring-boot-example" >}}) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 As the sample TicketAgent WSDL does not contain a SOAP fault we will add one in the context of this tutorial.
 
@@ -191,7 +191,7 @@ As the sample TicketAgent WSDL does not contain a SOAP fault we will add one in 
 
 ## Configure the CXF LoggingInInterceptor and CXF LoggingOutInterceptor
 
-[Interceptors](https://cxf.apache.org/docs/interceptors.html) are the fundamental processing unit inside CXF. For more information checkout following post on the basic [CXF interceptor architecture](/cxf-feature-vs-interceptor.html).
+[Interceptors](https://cxf.apache.org/docs/interceptors.html) are the fundamental processing unit inside CXF. For more information checkout following post on the basic [CXF interceptor architecture]({{< ref "/blog/apache-cxf/apache-cxf-feature-vs-interceptor" >}}).
 
 CXF ships with a `LoggingInInterceptor` that allows logging of the **received** (IN) messages. In addition, for logging **sent** (OUT) messages, a `LoggingOutInterceptor` is provided. These interceptors can be added to one of the CXF interceptor providers (`Client`, `Endpoint`, `Service`, `Bus` or `Binding`) that implement the `InterceptorProvider` interface.
 

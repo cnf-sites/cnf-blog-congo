@@ -1,23 +1,23 @@
 ---
-title: "Apache CXF - JAX-WS - Logging Request and Response SOAP Messages using Log4j"
-summary: "A code sample which shows how to configure Apache CXF to log the request and response SOAP messages using Log4j."
-url: /apache-cxf-jaxws-logging-request-response-soap-messages-log4j.html
-date: 2015-01-11
-lastmod: 2015-01-11
+title: "Apache CXF - JAX-WS - Logging Request and Response SOAP Messages using Log4j2"
+summary: "A code sample which shows how to configure Apache CXF to log the request and response SOAP messages using Log4j2."
+url: /apache-cxf-jaxws-logging-request-response-soap-messages-log4j2.html
+date: 2015-01-10
+lastmod: 2015-01-10
 tags: ["posts", "apache cxf", "jax-ws"]
 draft: false
 aliases:
-  - /2014/09/jax-ws-cxf-logging-inbound-and-outbound.html
-  - /2015/01/jaxws-cxf-logging-request-response-soap-messages-log4j.html
-  - /jaxws-cxf-logging-request-response-soap-messages-log4j.html
+  - /2015/01/jaxws-cxf-logging-inbound-outbound-soap-messages-log4j2.html
+  - /2015/01/jaxws-cxf-logging-request-response-soap-messages-log4j2.html
+  - /jaxws-cxf-logging-request-response-soap-messages-log4j2.html
 ---
 
 [Apache CXF](https://cxf.apache.org/) uses Java SE Logging for both client- and server-side logging of SOAP requests and responses. Logging is activated by use of separate in/out interceptors that can be attached to the requester and/or provider as required. These interceptors can be specified either programmatically (via Java code and/or annotations) or via the use of configuration files.
 
-The following code sample shows how to configure CXF interceptors using Log4j for the [Hello World web service from a previous post](/jaxws-cxf-contract-first-hello-world-webservice-tutorial.html).
+The following code sample shows how to configure CXF interceptors using Log4j2 for the [Hello World web service from a previous post](/jaxws-cxf-contract-first-hello-world-webservice-tutorial.html).
 
 {{< alert "lightbulb" >}}
-An updated version of this blog post has been created that contains a [CXF logging example](/apache-cxf-logging-soap-request-response-fault-messages-example.html) which uses the new log features that were added since version 3.1.
+An updated version of this blog post has been created that contains a [CXF logging example]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-log-soap-messages-example" >}}) which uses the new log features that were added since version 3.1.
 {{< /alert >}}
 
 Tools used:
@@ -33,17 +33,17 @@ Specifying the interceptors via configuration files offers two benefits over pro
 1. Logging requirements **can be altered without needing to recompile the code**.
 2. **No Apache CXF-specific APIs need to be added to your code**, which helps it remain interoperable with other JAX-WS compliant web service stacks.
 
-For this example [Log4j](https://logging.apache.org/log4j/1.2/) will be used which is is a Java-based logging utility. As a best practice the CXF `java.util.logging` calls will first be redirected to [SLF4J](http://www.slf4j.org/) (Simple Logging Facade for Java) as described here. In other words a `META-INF/cxf/org.apache.cxf.Logger` file will be created on the classpath containing the following:
+For this example [Log4j2](https://logging.apache.org/log4j/2.x/) will be used which is an upgrade of the [Log4j](https://logging.apache.org/log4j/1.2/) project. As a best practice the CXF `java.util.logging` calls will first be redirected to [SLF4J](http://www.slf4j.org/) (Simple Logging Facade for Java) as described [here](https://cxf.apache.org/docs/debugging-and-logging.html#DebuggingandLogging-UsingSLF4JInsteadofjava.util.logging%28since2.2.8%29). In other words a `META-INF/cxf/org.apache.cxf.Logger` file will be created on the classpath containing the following:
 
 ``` text
 org.apache.cxf.common.logging.Slf4jLogger
 ```
 
-As the Hello World example uses Spring, the commons-logging calls from the Spring framework will also be redirected to SLF4J using [jcl-over-slf4j](http://www.slf4j.org/legacy.html). Now that all logging calls of both CXF and Spring are redirected to SLF4J, Log4j will be plugged into SLF4J using the [slf4j-log4j12](http://www.slf4j.org/legacy.html) adaptation layer. The picture below illustrates the described approach.
+As the Hello World example uses Spring, the commons-logging calls from the Spring framework will also be redirected to SLF4J using [jcl-over-slf4j](http://www.slf4j.org/legacy.html). Now that all logging calls of both CXF and Spring are redirected to SLF4J, Log4j2 will be plugged into SLF4J using the [Log4j 2 SLF4J Binding](https://logging.apache.org/log4j/2.0/log4j-slf4j-impl/index.html). The picture below illustrates the described approach.
 
-![cxf logging using log4j](cxf-logging-using-log4j.png)
+![cxf logging using log4j2](cxf-logging-using-log4j2.png)
 
-The below Maven POM file contains the needed dependencies for the SLF4 bridge `jcl-over-slf4j`, Log4j adaptation layer `slf4j-log4j12` and Log4j `log4j`. In addition, it contains all other needed dependencies and plugins needed in order to run the example.
+The below Maven POM file contains the needed dependencies for the SLF4 bridge `jcl-over-slf4j`, Log4j 2 SLF4J Binding `log4j-slf4j-impl` and Log4j2 `log4j-core`. In addition, it contains all other needed dependencies and plugins needed in order to run the example.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -52,20 +52,20 @@ The below Maven POM file contains the needed dependencies for the SLF4 bridge `j
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.codenotfound</groupId>
-  <artifactId>cxf-jaxws-jetty-logging-log4j</artifactId>
+  <artifactId>cxf-jaxws-jetty-logging-log4j2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>cxf-jaxws-jetty-logging-log4j</name>
-  <description>JAX-WS - CXF logging request and response SOAP messages using Log4j</description>
-  <url>https://codenotfound.com/jaxws-cxf-logging-request-response-soap-messages-log4j.html</url>
+  <name>cxf-jaxws-jetty-logging-log4j2</name>
+  <description>JAX-WS - CXF logging request and response SOAP messages using Log4j2</description>
+  <url>https://codenotfound.com/jaxws-cxf-logging-request-response-soap-messages-log4j2.html</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
 
     <slf4j.version>1.7.10</slf4j.version>
-    <log4j.version>1.2.17</log4j.version>
+    <log4j2.version>2.1</log4j2.version>
     <junit.version>4.12</junit.version>
     <cxf.version>3.0.3</cxf.version>
     <spring.version>4.1.4.RELEASE</spring.version>
@@ -83,14 +83,14 @@ The below Maven POM file contains the needed dependencies for the SLF4 bridge `j
       <version>${slf4j.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>${slf4j.version}</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>${log4j2.version}</version>
     </dependency>
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>${log4j.version}</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${log4j2.version}</version>
     </dependency>
     <!-- JUnit -->
     <dependency>
@@ -240,69 +240,79 @@ The below Maven POM file contains the needed dependencies for the SLF4 bridge `j
 </project>
 ```
 
-## Log4j configuration
+## Log4j2 configuration
 
- The log4j environment is fully configurable programmatically. However, it is far more flexible to configure log4j using configuration files. Currently, configuration files can be written in XML or in Java properties (key=value) format. For this example, a configuration script in XML is used as shown below. The script will write all logging events to a file except for the request and response SOAP messages that will be written to a different file.
+Log4j2 can be configured in 1 of 4 ways:
 
-Two appenders are configured to write logging events to a rolling file. The first file `jaxws-jetty-cxf-logging.log` will contain all log events except for the ones emitted by the CXF logging interceptors as these are going to be written to `jaxws-jetty-cxf-logging-ws.log`.
+1. Through a configuration file written in XML, JSON, or YAML.
+2. Programmatically, by creating a `ConfigurationFactory` and `Configuration` implementation.
+3. Programmatically, by calling the APIs exposed in the `Configuration` interface to add components to the default configuration.
+4. Programmatically, by calling methods on the internal `Logger` class.
 
-The last section contains the different loggers and the level at which information is logged. The log level of the `org.apache.cxf.services` logger needs to be set to INFO in order to activate the SOAP logging events. In addition the `WS_LOG_FILE` appender needs to be referenced in order to write the SOAP logging events to a different file. Note the `additivity="false'` which makes sure the log events are not written to appenders attached to its ancestors (in this case `APP_LOG_FILE`).
+For this example, a configuration script in XML is used as shown below. The script will write all logging events to a file except for the request and response SOAP messages that will be written to a different file.
+
+After defining some properties that contain the layout pattern and file names, two appenders are configured to write logging events to a rolling file. The first file `jaxws-jetty-cxf-logging.log` will contain all log events except for the ones emitted by the CXF logging interceptors as these are going to be written to `jaxws-jetty-cxf-logging-ws.log`.
+
+The last section contains the different loggers and the level at which information is logged. The log level of the `org.apache.cxf.services` logger needs to be set to INFO in order to activate the SOAP logging events. In addition the `WS_LOG_FILE` appender needs to be referenced in order to write the SOAP logging events to a different file. Note the `additivity="false"` which makes sure the log events are not written to appenders attached to its ancestors (in this case `APP_LOG_FILE`).
 
 ``` xml
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
-<log4j:configuration debug="false"
-  xmlns:log4j='http://jakarta.apache.org/log4j/'>
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+
+  <!-- PROPERTIES -->
+  <Properties>
+    <Property name="layout">%d{HH:mm:ss.SSS} %-5level
+      [%thread][%logger{0}] %m%n</Property>
+    <Property name="logFile">jaxws-jetty-cxf-logging</Property>
+    <Property name="logFile-ws">jaxws-jetty-cxf-logging-ws</Property>
+  </Properties>
 
   <!-- APPENDERS -->
-  <appender name="APP_LOG_FILE" class="org.apache.log4j.DailyRollingFileAppender">
-    <param name="file" value="jaxws-jetty-cxf-logging.log" />
-    <param name="DatePattern" value="'.'yyyy-MM-dd" />
-    <layout class="org.apache.log4j.PatternLayout">
-      <param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %-5p [%t][%c{1}] %m%n" />
-    </layout>
-  </appender>
+  <Appenders>
+    <RollingFile name="APP_LOG_FILE" fileName="${logFile}.log"
+      filePattern="${logFile}.%d{yyyy-MM-dd}.log">
+      <TimeBasedTriggeringPolicy interval="1"
+        modulate="true" />
+      <DefaultRolloverStrategy max="30" />
+      <PatternLayout pattern="${layout}" />
+    </RollingFile>
 
-  <appender name="WS_LOG_FILE" class="org.apache.log4j.DailyRollingFileAppender">
-    <param name="file" value="jaxws-jetty-cxf-logging-ws.log" />
-    <param name="DatePattern" value="'.'yyyy-MM-dd" />
-    <layout class="org.apache.log4j.PatternLayout">
-      <param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %-5p [%t][%c{1}] %m%n" />
-    </layout>
-  </appender>
+    <RollingFile name="WS_LOG_FILE" fileName="${logFile-ws}.log"
+      filePattern="${logFile-ws}.%d{yyyy-MM-dd}.log">
+      <TimeBasedTriggeringPolicy interval="1"
+        modulate="true" />
+      <DefaultRolloverStrategy max="30" />
+      <PatternLayout pattern="${layout}" />
+    </RollingFile>
+  </Appenders>
 
   <!-- LOGGERS -->
-  <logger name="com.codenotfound.soap.http.cxf">
-    <level value="INFO" />
-  </logger>
+  <Loggers>
+    <Logger name="com.codenotfound.soap.http.cxf" level="INFO" />
 
-  <logger name="org.springframework">
-    <level value="WARN" />
-  </logger>
-  <logger name="org.apache.cxf">
-    <level value="WARN" />
-  </logger>
+    <Logger name="org.springframework" level="WARN" />
+    <Logger name="org.apache.cxf" level="WARN" />
 
-  <!-- level INFO needed to log SOAP messages -->
-  <logger name="org.apache.cxf.services" additivity="false">
-    <level value="INFO" />
-    <!-- specify a dedicated appender for the SOAP messages -->
-    <appender-ref ref="WS_LOG_FILE" />
-  </logger>
+    <!-- level INFO needed to log SOAP messages -->
+    <Logger name="org.apache.cxf.services" level="INFO"
+      additivity="false">
+      <!-- specify a dedicated appender for the SOAP messages -->
+      <AppenderRef ref="WS_LOG_FILE" />
+    </Logger>
 
-  <root>
-    <level value="WARN" />
-    <appender-ref ref="APP_LOG_FILE" />
-  </root>
+    <Root level="WARN">
+      <AppenderRef ref="APP_LOG_FILE" />
+    </Root>
+  </Loggers>
 
-</log4j:configuration>
+</Configuration>
 ```
 
 ## Requester
 
 In order to activate the logging interceptors provided by the CXF framework, there are two options. For the requester(client) the option where all logging interceptors are configured manually will be illustrated.
 
-The other option, where the logging feature is used to configure all interceptors, will be shown in the provider section down below. Check out following post for more information on [cxf feature vs interceptor](/cxf-feature-vs-interceptor.html).
+The other option, where the logging feature is used to configure all interceptors, will be shown in the provider section down below. Check out following post for more information on [cxf feature vs interceptor]({{< ref "/blog/apache-cxf/apache-cxf-feature-vs-interceptor" >}}).
 
 First, an instance of the abstract `AbstractLoggingInterceptor` class is created to enable pretty printing of the SOAP messages. Next, instances of the `LoggingInInterceptor` and `LoggingOutInterceptor` are specified which have as parent the previously defined `abstractLoggingInterceptor` instance.
 
@@ -359,7 +369,7 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
 ## Provider
 
-Activating the interceptors at provider(server) side will be done using the `LoggingFeature` that is supplied with the CXF framework.
+ Activating the interceptors at provider(server) side will be done using the `LoggingFeature` that is supplied with the CXF framework.
 
 First, an instance of the abstract `LoggingFeature` class is created with the `prettyLogging` set to true in order to enable pretty printing of the SOAP messages. As with the interceptors, the feature is added to the CXF bus in order to activate them as shown below.
 
@@ -400,7 +410,7 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 Testing of the service is done using a unit and an integration test case. For the unit test case, the provider is created without Spring (using `JaxWsServerFactoryBean`), as such the logging feature needs to be added programmatically as shown below.
 
 ``` java
-package com.codenofound.soap.http.cxf;
+package com.codenotfound.soap.http.cxf;
 
 import static org.junit.Assert.assertEquals;
 
@@ -414,8 +424,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.codenotfound.services.helloworld.Person;
-import com.codenotfound.soap.http.cxf.HelloWorldClient;
-import com.codenotfound.soap.http.cxf.HelloWorldImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(
@@ -504,7 +512,7 @@ Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
 ```
 
 {{< alert "github" >}}
-If you would like to run the above code sample you can get the [full source code on GitHub](https://github.com/code-not-found/cxf-jaxws/tree/master/cxf-jaxws-jetty-logging-log4j).
+If you would like to run the above code sample you can get the [full source code on GitHub](https://github.com/code-not-found/cxf-jaxws/tree/master/cxf-jaxws-jetty-logging-log4j2).
 {{< /alert >}}
 
-This concludes the CXF logging request and response messages using Log4j example. If you found this post helpful or have any questions or remarks, please leave a comment.
+This concludes the CXF logging request and response messages using Log4j2 example. If you found this post helpful or have any questions or remarks, please leave a comment.

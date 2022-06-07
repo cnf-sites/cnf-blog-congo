@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a Hello World Pri
 url: /jsf-primefaces-example.html
 date: 2017-12-30
 lastmod: 2018-11-22
-tags: ["posts", "primefaces", "jsf"]
+tags: ["posts", "primefaces", "jsf", "spring"]
 draft: false
 aliases:
   - /2017/04/jsf-primefaces-spring-boot-example.html

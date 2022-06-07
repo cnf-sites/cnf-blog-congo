@@ -17,7 +17,7 @@ aliases:
 In this tutorial, we will take a look at how we can integrate CXF with Spring Boot in order to build and run a Hello World SOAP service. Throughout the example, we will be creating a contract first client and endpoint using Apache CXF, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF - JAX-WS tutorials page](/apache-cxf-jaxws-tutorials/).
+If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF JAX-WS tutorials page]({{< ref "/tutorials/apache-cxf-jaxws-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup
@@ -28,7 +28,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The below code is organized in such a way that you can choose to only run the [client](/apache-cxf-spring-boot-soap-web-service-client-server-example.html#creating-the-cxf-client-consumer) (consumer) or [endpoint](/apache-cxf-spring-boot-soap-web-service-client-server-example.html#creating-the-cxf-endpoint-provider) (provider) part. In the example, we will setup both parts and then make an end-to-end test in which the client calls the endpoint.
+The below code is organized in such a way that you can choose to only run the [client]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-spring-boot-example#creating-the-cxf-client-consumer" >}}) (consumer) or [endpoint]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-spring-boot-example#creating-the-cxf-endpoint-provider" >}}) (provider) part. In the example, we will setup both parts and then make an end-to-end test in which the client calls the endpoint.
 
 For this example, we will start from an existing WSDL file (contract-first) which is shown below. The content represents a SOAP service in which a person is sent as input and a greeting is received as a response.
 
@@ -223,7 +223,7 @@ public class SpringCxfApplication {
 
 ## Creating the CXF Endpoint (Provider)
 
-In order for the CXF framework to be able to process incoming SOAP request over HTTP, we need to setup a `CXFServlet`. In our previous [CXF SOAP Web Service tutorial](/jaxws-cxf-contract-first-hello-world-webservice-tutorial.html) we did this by using a deployment descriptor file (`web.xml` file under the `WEB-INF` directory) or an alternative with Spring is to use a `ServletRegistrationBean`. In this example, there is nothing to be done as the `cxf-spring-boot-starter-jaxws` automatically register the `CXFServlet` for us, great!
+In order for the CXF framework to be able to process incoming SOAP request over HTTP, we need to setup a `CXFServlet`. In our previous [CXF SOAP Web Service tutorial]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-contract-first-webservice-example" >}}) we did this by using a deployment descriptor file (`web.xml` file under the `WEB-INF` directory) or an alternative with Spring is to use a `ServletRegistrationBean`. In this example, there is nothing to be done as the `cxf-spring-boot-starter-jaxws` automatically register the `CXFServlet` for us, great!
 
 We want the `CXFServlet` to listen for incoming requests on the following URI: `/codenotfound/ws`, instead of the default value which is: `/services/*`. This can be achieved by setting the `'cxf.path'` property in the `application.yml` file located under the `src/main/resources` folder.
 

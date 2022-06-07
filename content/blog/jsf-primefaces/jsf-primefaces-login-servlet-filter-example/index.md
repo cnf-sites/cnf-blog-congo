@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a JSF login servl
 url: /jsf-login-servlet-filter-example.html
 date: 2015-01-04
 lastmod: 2015-01-04
-tags: ["posts", "primefaces", "jsf"]
+tags: ["posts", "primefaces", "jsf", "spring"]
 draft: false
 aliases:
   - /2016/01/jsf-primefaces-login-servlet-filter-example-using-jetty-and-maven.html

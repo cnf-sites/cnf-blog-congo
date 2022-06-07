@@ -32,8 +32,9 @@ The credentials are provided as an HTTP header field called `Authorization` whic
 
 Instead of writing custom code to create and check the HTTP authorization header we will configure Apache CXF and Spring Boot to do the work for us. The below example illustrates how a client and server can be configured to apply basic access authentication using Apache CXF, Spring Boot, and Maven.
 
-If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF - JAX-WS tutorials page](/cxf-jaxws/).
-{: .notice--primary}
+{{< alert "lightbulb" >}}
+If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF JAX-WS tutorials page]({{< ref "/tutorials/apache-cxf-jaxws-tutorials" >}}).
+{{< /alert >}}
 
 ## General Project Setup
 
@@ -43,7 +44,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the sample is based on a previous [Apache CXF tutorial](/apache-cxf-spring-boot-soap-web-service-client-server-example.html) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The setup of the sample is based on a previous [Apache CXF tutorial]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-spring-boot-example" >}}) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 In order for this example to work we need to add one additional dependency to the Maven POM file which is the `spring-boot-starter-security` [Spring Boot starter](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project/spring-boot-starters) dependency that will be used for the server setup.
 

@@ -13,7 +13,7 @@ The [SOAP header](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383497) 
 This example details how a web service client can add a SOAP header on an outgoing request. It also illustrates how a server endpoint can then get the SOAP header from an incoming request. Both client and server are realized using Apache CXF, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF - JAX-WS tutorials page](/apache-cxf-jaxws-tutorials/).
+If you want to learn more about Apache CXF for JAX-WS - head on over to the [Apache CXF JAX-WS tutorials page]({{< ref "/tutorials/apache-cxf-jaxws-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup
@@ -24,7 +24,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The configuration of this project is based on a previous [CXF example project](/apache-cxf-spring-boot-soap-web-service-client-server-example.html) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The configuration of this project is based on a previous [CXF example project]({{< ref "/blog/apache-cxf-jaxws/apache-cxf-jaxws-spring-boot-example" >}}) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 There are two different ways to define the use of SOAP header fields in a Web service, namely [implicit and explicit headers](https://www.ibm.com/developerworks/library/ws-tip-headers/index.html).
 

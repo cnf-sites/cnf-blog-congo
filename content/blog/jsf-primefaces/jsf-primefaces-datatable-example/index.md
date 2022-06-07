@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a PrimeFaces Data
 url: /jsf-primefaces-datatable-example.html
 date: 2018-03-03
 lastmod: 2018-12-06
-tags: ["posts", "primefaces", "jsf"]
+tags: ["posts", "primefaces", "jsf", "spring"]
 draft: false
 ---
 

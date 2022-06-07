@@ -4,7 +4,7 @@ summary: "A code sample on how to implement a PrimeFaces for JSF welcome page re
 url: /jsf-primefaces-welcome-page-redirect-example.html
 date: 2018-01-02
 lastmod: 2018-12-08
-tags: ["posts", "primefaces", "jsf"]
+tags: ["posts", "primefaces", "jsf", "spring"]
 draft: false
 aliases:
   - /jsf-welcome-page-redirect-example-spring-boot.html

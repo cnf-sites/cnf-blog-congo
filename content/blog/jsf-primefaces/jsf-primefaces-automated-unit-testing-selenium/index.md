@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement an automated unit
 url: /jsf-primefaces-automated-unit-testing-selenium.html
 date: 2018-01-01
 lastmod: 2018-12-09
-tags: ["posts", "primefaces", "jsf"]
+tags: ["posts", "primefaces", "jsf", "spring"]
 draft: false
 ---
 

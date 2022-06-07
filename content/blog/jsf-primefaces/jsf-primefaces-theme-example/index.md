@@ -4,7 +4,7 @@ summary: "A code sample on how to configure the PrimeFaces Bootstrap theme using
 url: /jsf-primefaces-themes-example.html
 date: 2018-01-02
 lastmod: 2018-12-06
-tags: ["posts", "primefaces", "jsf"]
+tags: ["posts", "primefaces", "jsf", "spring"]
 draft: false
 aliases:
   - /jsf-primefaces-theme-spring-boot.html
