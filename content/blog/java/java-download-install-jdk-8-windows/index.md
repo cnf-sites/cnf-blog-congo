@@ -25,7 +25,7 @@ If you want to get up and running with Java, **you'll love this tutorial**.
 James Gosling created Java at Sun Microsystems. It is currently owned by the Oracle Corporation.
 
 {{< alert "lightbulb" >}}
-Check following guides if you are looking to download and install [JDK 1.5](/java-download-install-jdk-5-windows.html), [JDK 1.6](/java-download-install-jdk-6-windows.html), [JDK 1.7](/java-download-install-jdk-7-windows.html), [JDK 1.9](/java-download-install-jdk-9-windows.html) or [JDK 1.10](/java-download-install-jdk-10-windows.html).
+Check following guides if you are looking to download and install [JDK 1.5]({{< ref "/blog/java/java-download-install-jdk-5-windows" >}}), [JDK 1.6]({{< ref "/blog/java/java-download-install-jdk-6-windows" >}}), [JDK 1.7]({{< ref "/blog/java/java-download-install-jdk-7-windows" >}}), [JDK 1.9]({{< ref "/blog/java/java-download-install-jdk-9-windows" >}}) or [JDK 1.10]({{< ref "/blog/java/java-download-install-jdk-10-windows" >}}).
 {{< /alert >}}
 
 Java can be obtained from the Oracle Java download page. There are a number of [different Java packages available](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html), for this tutorial we will be installing Java Standard Edition (SE) on Windows.

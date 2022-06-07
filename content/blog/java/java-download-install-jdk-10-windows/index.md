@@ -13,7 +13,7 @@ draft: false
 Java is currently owned by the Oracle Corporation which acquired Sun Microsystems in 2010. Following tutorial will show you how to setup and configure Java 10 on Windows so you can develop and run Java code.
 
 {{< alert "lightbulb" >}}
-Check following guides if you are looking to download and install [JDK 1.5](/java-download-install-jdk-5-windows.html), [JDK 1.6](/java-download-install-jdk-6-windows.html), [JDK 1.7](/java-download-install-jdk-7-windows.html), [JDK 1.8](/java-download-install-jdk-8-windows.html) or [JDK 1.9](/java-download-install-jdk-9-windows.html).
+Check following guides if you are looking to download and install [JDK 1.5]({{< ref "/blog/java/java-download-install-jdk-5-windows" >}}), [JDK 1.6]({{< ref "/blog/java/java-download-install-jdk-6-windows" >}}), [JDK 1.7]({{< ref "/blog/java/java-download-install-jdk-7-windows" >}}), [JDK 1.8]({{< ref "/blog/java/java-download-install-jdk-8-windows" >}}) or [JDK 1.9]({{< ref "/blog/java/java-download-install-jdk-9-windows" >}}).
 {{< /alert >}}
 
 ## JDK Download & Install

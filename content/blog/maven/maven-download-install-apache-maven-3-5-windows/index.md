@@ -19,7 +19,7 @@ The following tutorial shows how to download, install and configure Apache Maven
 
 ## Maven Prerequisites
 
-As Maven needs [Java](https://java.com/en/download/) in order to work, make sure that [a Java runtime environment (JRE) is installed and configured on your system](/java-download-install-jdk-8-windows.html).
+As Maven needs [Java](https://java.com/en/download/) in order to work, make sure that [a Java runtime environment (JRE) is installed and configured on your system]({{< ref "/blog/java/java-download-install-jdk-8-windows" >}}).
 
 Maven 3.3+ requires JDK 1.7 or above to execute.
 

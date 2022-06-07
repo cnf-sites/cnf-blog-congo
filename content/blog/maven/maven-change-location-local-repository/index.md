@@ -15,7 +15,7 @@ A repository in [Maven](https://maven.apache.org/) is used to hold build artifac
 
 The **local repository** refers to a copy on your own machine that is a cache of the remote downloads and also contains the temporary build artifacts that have not yet been released.
 
-When [installing Maven](/maven-download-install-apache-maven-3-2-windows.html), the local repository is located under a default location. The following tutorial shows how you can change the location of this local repository on Windows.
+When [installing Maven]({{< ref "/blog/maven/maven-download-install-apache-maven-3-2-windows" >}}), the local repository is located under a default location. The following tutorial shows how you can change the location of this local repository on Windows.
 
 ## Maven Local Repository
 

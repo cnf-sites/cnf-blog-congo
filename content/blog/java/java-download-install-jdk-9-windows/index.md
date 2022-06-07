@@ -15,7 +15,7 @@ Java is currently owned by the Oracle Corporation which acquired Sun Microsystem
 > JDK 9 has reached its end of life (and end of public support) as of March 2018 and users should switch to [JDK 10](/java-download-install-jdk-10-windows.html). This is linked to the new release cycle that Java will be following which consists out of a "feature" release every 6 months and a long-term support (LTS) release every 3 years. The next planned LTS is JDK 11.
 
 {{< alert "lightbulb" >}}
-Check following guides if you are looking to download and install [JDK 1.5](/java-download-install-jdk-5-windows.html), [JDK 1.6](/java-download-install-jdk-6-windows.html), [JDK 1.7](/java-download-install-jdk-7-windows.html), [JDK 1.8](/java-download-install-jdk-8-windows.html) or [JDK 1.10](/java-download-install-jdk-10-windows.html).
+Check following guides if you are looking to download and install [JDK 1.5]({{< ref "/blog/java/java-download-install-jdk-5-windows" >}}), [JDK 1.6]({{< ref "/blog/java/java-download-install-jdk-6-windows" >}}), [JDK 1.7]({{< ref "/blog/java/java-download-install-jdk-7-windows" >}}), [JDK 1.8]({{< ref "/blog/java/java-download-install-jdk-8-windows" >}}) or [JDK 1.10]({{< ref "/blog/java/java-download-install-jdk-10-windows" >}}).
 {{< /alert >}}
 
 ## JDK Download & Install
