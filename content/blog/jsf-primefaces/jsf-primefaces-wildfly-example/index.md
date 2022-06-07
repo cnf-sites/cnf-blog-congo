@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial in which we build and run a Hello Wor
 url: /jsf-primefaces-hello-world-example-wildfly-maven.html
 date: 2016-01-03
 lastmod: 2016-01-03
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /2016/01/jsf-primefaces-wildfly-example-using-maven.html
@@ -118,7 +118,7 @@ The context path of our deployed application will be changed to `/codenotfound`.
 </jboss-web>
 ```
 
-The remaining code of the example is identical to a previous [PrimeFaces Hello World example running on Jetty](/jsf-primefaces-hello-world-example-jetty-maven.html). Feel free to check it out if you would like to know more details.
+The remaining code of the example is identical to a previous [PrimeFaces Hello World example running on Jetty]({{< ref "/blog/jsf-primefaces/jsf-primefaces-jetty-example" >}}). Feel free to check it out if you would like to know more details.
 
 In order to run the above example open a command prompt and execute following Maven command:
 

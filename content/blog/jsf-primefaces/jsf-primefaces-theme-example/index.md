@@ -4,7 +4,7 @@ summary: "A code sample on how to configure the PrimeFaces Bootstrap theme using
 url: /jsf-primefaces-themes-example.html
 date: 2018-01-02
 lastmod: 2018-12-06
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /jsf-primefaces-theme-spring-boot.html
@@ -19,7 +19,7 @@ More specifically we'll configure the free [Bootstrap](https://www.primefaces.or
 Let's jump right in…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials](/jsf-primefaces-tutorials) page.
+If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials]({{< ref "/tutorials/jsf-primefaces-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What are PrimeFaces Themes?
@@ -47,7 +47,7 @@ Our project has the following directory structure:
 
 ## Maven Setup
 
-We start from a previous [JSF Spring Boot Example](/jsf-primefaces-example.html) in which we created a greeting dialog based on a first and last name input field.
+We start from a previous [JSF Spring Boot Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-spring-boot-example" >}}) in which we created a greeting dialog based on a first and last name input field.
 
 As the PrimeFaces community themes are not available in the Maven central repository we need to specify the [PrimeFaces Maven Repository](http://repository.primefaces.org) in our Maven POM file as shown below.
 

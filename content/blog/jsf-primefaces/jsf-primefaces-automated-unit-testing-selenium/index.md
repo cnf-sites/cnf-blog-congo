@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement an automated unit
 url: /jsf-primefaces-automated-unit-testing-selenium.html
 date: 2018-01-01
 lastmod: 2018-12-09
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 ---
 
@@ -17,7 +17,7 @@ We will use the **PageObject pattern**.
 So let's get to work.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials](/jsf-primefaces-tutorials) page.
+If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials]({{< ref "/tutorials/jsf-primefaces-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Selenium?
@@ -44,7 +44,7 @@ Our project has the following directory structure:
 
 ## Maven Setup
 
-We start from a previous [Spring Boot Primefaces Tutorial](/jsf-primefaces-example.html) in which we created a greeting dialog based on a first and last name input form.
+We start from a previous [Spring Boot Primefaces Tutorial]({{< ref "/blog/jsf-primefaces/jsf-primefaces-spring-boot-example" >}}) in which we created a greeting dialog based on a first and last name input form.
 
 We add `spring-boot-starter-test` to the existing [Maven](https://maven.apache.org/) POM file. This will include the core dependencies for testing Spring Boot applications with libraries that include [JUnit](http://junit.org/junit4/), [Hamcrest](http://hamcrest.org/JavaHamcrest/) and [Mockito](http://site.mockito.org/).
 

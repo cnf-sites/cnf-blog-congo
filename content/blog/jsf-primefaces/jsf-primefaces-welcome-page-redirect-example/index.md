@@ -4,7 +4,7 @@ summary: "A code sample on how to implement a PrimeFaces for JSF welcome page re
 url: /jsf-primefaces-welcome-page-redirect-example.html
 date: 2018-01-02
 lastmod: 2018-12-08
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /jsf-welcome-page-redirect-example-spring-boot.html
@@ -17,7 +17,7 @@ If you're looking for a practical example using [Spring Boot](https://spring.io/
 So here we go.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials](/jsf-primefaces-tutorials) page.
+If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials]({{< ref "/tutorials/jsf-primefaces-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is a Welcome-File-List?
@@ -41,7 +41,7 @@ Our project has the following directory structure:
 
 ## Changing the Default Welcome Page for Spring Boot
 
-We start from a previous [JSF Spring Boot Tutorial](/jsf-primefaces-example.html) in which we created a greeting dialog using a first and last name input form.
+We start from a previous [JSF Spring Boot Tutorial]({{< ref "/blog/jsf-primefaces/jsf-primefaces-spring-boot-example" >}}) in which we created a greeting dialog using a first and last name input form.
 
 As we are running on Spring Boot we no longer have a `web.xml` in which we can specify a `&lt;welcome-file-list&gt;`.
 

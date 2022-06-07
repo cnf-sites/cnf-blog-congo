@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a Hello World Pri
 url: /jsf-primefaces-example.html
 date: 2017-12-30
 lastmod: 2018-11-22
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /2017/04/jsf-primefaces-spring-boot-example.html
@@ -20,7 +20,7 @@ So if you're a PrimeFaces for JSF beginner, **you'll love this guide**.
 Ready?
 
 {{< alert "lightbulb" >}}
-If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials](/jsf-primefaces-tutorials) page.
+If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials]({{< ref "/tutorials/jsf-primefaces-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is PrimeFaces for JSF?

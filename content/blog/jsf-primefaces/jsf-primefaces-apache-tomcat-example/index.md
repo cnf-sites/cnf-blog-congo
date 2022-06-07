@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial in which we build and run a Hello Wor
 url: /jsf-primefaces-hello-world-example-apache-tomcat.html
 date: 2016-01-04
 lastmod: 2016-01-04
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /2016/01/jsf-primefaces-apache-tomcat-example-using-maven.html

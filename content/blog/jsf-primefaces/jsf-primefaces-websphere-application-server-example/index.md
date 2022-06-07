@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial in which we build and run a Hello Wor
 url: /jsf-primefaces-hello-world-example-websphere-application-server-maven.html
 date: 2016-01-05
 lastmod: 2016-01-05
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /2016/01/jsf-primefaces-hello-world-example-using-websphere-application-server-and-maven.html

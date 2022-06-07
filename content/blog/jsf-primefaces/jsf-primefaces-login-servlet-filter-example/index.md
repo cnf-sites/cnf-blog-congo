@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a JSF login servl
 url: /jsf-login-servlet-filter-example.html
 date: 2015-01-04
 lastmod: 2015-01-04
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /2016/01/jsf-primefaces-login-servlet-filter-example-using-jetty-and-maven.html
@@ -26,7 +26,7 @@ Tools used:
 
 The code is built and run using [Maven](https://maven.apache.org/). Specified below is the Maven POM file which contains the needed dependencies for PrimeFaces, JoinFaces, Selenium, and Spring Boot.
 
-Testing is based on a previous [JSF Page Object pattern example](/jsf-primefaces-automated-unit-testing-selenium.html) in which we detailed how to use a Selenium `WebDriver` to automate tests against a [PrimeFaces](https://www.primefaces.org/) web page.
+Testing is based on a previous [JSF Page Object pattern example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-automated-unit-testing-selenium" >}}) in which we detailed how to use a Selenium `WebDriver` to automate tests against a [PrimeFaces](https://www.primefaces.org/) web page.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to setup a Bootstrap theme usi
 url: /jsf-primefaces-bootstrap-theme.html
 date: 2018-03-06
 lastmod: 2018-03-06
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: true
 ---
 

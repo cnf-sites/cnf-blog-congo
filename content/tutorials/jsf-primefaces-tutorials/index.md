@@ -37,18 +37,20 @@ PrimeFaces is developed and maintained by [PrimeTek Informatics](http://www.prim
 
 _If you would like to request a new tutorial, leave a comment below._
 
-* [JSF PrimeFaces Example](/jsf-primefaces-example.html)
-* [JSF PrimeFaces DataTable Example](/jsf-primefaces-datatable-example.html)
-* [JSF PrimeFaces Themes Example](/jsf-primefaces-themes-example.html)
-* [JSF PrimeFaces Spring Security Example](/jsf-primefaces-spring-security-example.html)
-* [JSF PrimeFaces Welcome Page Redirect Example](/jsf-primefaces-welcome-page-redirect-example.html)
-* [JSF Primefaces Automated Unit Testing using Selenium](/jsf-primefaces-automated-unit-testing-selenium.html)
+* [JSF PrimeFaces Spring Boot Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-spring-boot-example" >}})
+* [JSF PrimeFaces DataTable Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-datatable-example" >}})
+* [JSF PrimeFaces Themes Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-theme-example" >}})
+* [JSF PrimeFaces Welcome Page Redirect Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-welcome-page-redirect-example" >}})
+* [JSF PrimeFaces Spring Security Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-spring-security-example" >}})
+* [JSF Login Servlet Filter Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-login-servlet-filter-example" >}})
+* [JSF Primefaces Automated Unit Testing using Selenium]({{< ref "/blog/jsf-primefaces/jsf-primefaces-automated-unit-testing-selenium" >}})
 
-* [JSF - PrimeFaces Hello World Example using Jetty and Maven](/jsf-primefaces-hello-world-example-jetty-maven.html)
-* [JSF - PrimeFaces Hello World Example using WildFly and Maven](/jsf-primefaces-hello-world-example-wildfly-maven.html)
-* [JSF - PrimeFaces Hello World Example using Apache Tomcat and Maven](/jsf-primefaces-hello-world-example-apache-tomcat.html)
-* [JSF - PrimeFaces Hello World Example using WebSphere Application Server and Maven](/jsf-primefaces-hello-world-example-websphere-application-server-maven.html)
-* [JSF - Login Servlet Filter Example](/jsf-login-servlet-filter-example.html)
+Tutorials not using Spring Boot:
+
+* [JSF PrimeFaces Jetty Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-jetty-example" >}})
+* [JSF PrimeFaces WildFly Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-wildfly-example" >}})
+* [JSF PrimeFaces Apache Tomcat Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-apache-tomcat-example" >}})
+* [JSF PrimeFaces WebSphere Application Server Example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-websphere-application-server-example" >}})
 
 ## References
 

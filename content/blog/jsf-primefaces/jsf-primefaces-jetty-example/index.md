@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial in which we build and run a Hello Wor
 url: /jsf-primefaces-hello-world-example-jetty-maven.html
 date: 2014-04-12
 lastmod: 2014-04-12
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /2014/04/jsf-primefaces-hello-world-using-jetty.html

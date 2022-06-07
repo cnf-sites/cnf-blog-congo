@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a PrimeFaces Data
 url: /jsf-primefaces-datatable-example.html
 date: 2018-03-03
 lastmod: 2018-12-06
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 ---
 
@@ -15,7 +15,7 @@ So if you want to **display data in a table** using PrimeFaces, then you'll love
 Let's dive right in…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials](/jsf-primefaces-tutorials) page.
+If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials]({{< ref "/tutorials/jsf-primefaces-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is PrimeFaces dataTable?
@@ -42,7 +42,7 @@ Our project has the following directory structure:
 
 ## Maven Setup
 
-The example builds on a previous [Hello World Primefaces Tutorial](/jsf-primefaces-example.html) in which we configured a basic PrimeFaces application to run on Spring Boot.
+The example builds on a previous [Hello World Primefaces Tutorial]({{< ref "/blog/jsf-primefaces/jsf-primefaces-spring-boot-example" >}}) in which we configured a basic PrimeFaces application to run on Spring Boot.
 
 Instead of hard coding the data that will be displayed in the DataTable, we will fetch it from a [H2 database](http://www.h2database.com/html/main.html). By adding the `h2` Maven dependency to the POM file, [Spring Boot will auto-configure an embedded H2 database](https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/html/boot-features-sql.html#boot-features-embedded-database-support) that we can use.
 

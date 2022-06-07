@@ -4,7 +4,7 @@ summary: "A detailed step-by-step tutorial on how to implement a PrimeFaces logi
 url: /jsf-primefaces-spring-security-example.html
 date: 2018-01-17
 lastmod: 2018-12-07
-tags: ["posts", "primefaces"]
+tags: ["posts", "primefaces", "jsf"]
 draft: false
 aliases:
   - /jsf-primefaces-spring-security.html
@@ -17,7 +17,7 @@ So if you want to secure your site, you'll love the step-by-step approach in thi
 We've got a lot to cover, so let's get started.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials](/jsf-primefaces-tutorials) page.
+If you want to learn more about PrimeFaces for JSF - head on over to the [JSF PrimeFaces tutorials]({{< ref "/tutorials/jsf-primefaces-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Spring Security?
@@ -44,9 +44,9 @@ Our project has the following directory structure:
 
 ## Maven Setup
 
-The example is based on a previous [Hello World Primefaces Tutorial](/jsf-primefaces-example.html) in which we created a greeting dialog based on a first and last name input form.
+The example is based on a previous [Hello World Primefaces Tutorial]({{< ref "/blog/jsf-primefaces/jsf-primefaces-spring-boot-example" >}}) in which we created a greeting dialog based on a first and last name input form.
 
-We also include the setup of a welcome page using the [PrimeFaces redirect example](/jsf-primefaces-welcome-page-redirect-example.html).
+We also include the setup of a welcome page using the [PrimeFaces redirect example]({{< ref "/blog/jsf-primefaces/jsf-primefaces-welcome-page-redirect-example" >}}).
 
 To use Spring Security we add `spring-boot-starter-security` to the existing [Maven](https://maven.apache.org/) POM file. This will include the core security dependencies that are needed for securing our JSF application.
 
