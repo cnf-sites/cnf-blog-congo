@@ -17,7 +17,7 @@ aliases:
 The following tutorial illustrates how to send/receive a Java object as a JSON `byte[]` array to/from Apache Kafka using Spring Kafka, Spring Boot and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka-tutorials).
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup
@@ -30,7 +30,7 @@ Tools used:
 
 [Apache Kafka](https://kafka.apache.org/) stores and transports `Byte` arrays in its topics. It ships with a number of [built in (de)serializers](https://kafka.apache.org/0100/javadoc/org/apache/kafka/common/serialization/Serializer.html) but a JSON one is not included. Luckily, the [Spring Kafka framework](https://projects.spring.io/spring-kafka/) includes a support package that contains a [JSON (de)serializer](https://github.com/spring-projects/spring-kafka/tree/master/spring-kafka/src/main/java/org/springframework/kafka/support/serializer) that uses a [Jackson](https://github.com/FasterXML/jackson) `ObjectMapper` under the covers.
 
-We base the below example on a previous [Spring Kafka example](/spring-kafka-consumer-producer-example.html). The only thing that needs to be added to the Maven POM file for working with JSON is the `spring-boot-starter-web` dependency which will indirectly include the needed `jackson-*` JAR dependencies.
+We base the below example on a previous [Spring Kafka example]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example" >}}). The only thing that needs to be added to the Maven POM file for working with JSON is the `spring-boot-starter-web` dependency which will indirectly include the needed `jackson-*` JAR dependencies.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -339,7 +339,7 @@ public class Receiver {
 
 ## Test Sending and Receiving JSON Messages on Kafka
 
-The Maven project contains a `SpringKafkaApplicationTest` test case to demonstrate the above sample code. A JUnit ClassRule [starts an embedded Kafka and ZooKeeper server](/spring-kafka-embedded-unit-test-example.html).
+The Maven project contains a `SpringKafkaApplicationTest` test case to demonstrate the above sample code. A JUnit ClassRule [starts an embedded Kafka and ZooKeeper server]({{< ref "/blog/spring-kafka/spring-kafka-embedded-unit-test-example" >}}).
 
 Using `@Before` we wait until all the partitions are assigned to our `Receiver` by looping over the available `ConcurrentMessageListenerContainer` (if we don't do this the message will already be sent before the listeners are assigned to the topic).
 

@@ -18,7 +18,7 @@ It is however still possible to log the client and server HTTP headers by creati
 The following example shows how to log the HTTP headers of messages that are being sent/received using Spring-WS, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials](/spring-ws-tutorials) page.
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
 {{< /alert >}}
 
 ## General Project Setup
@@ -29,7 +29,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the project is based on a previous [Spring Web Services example](/spring-ws-soap-web-service-consumer-provider-wsdl-example.html) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The setup of the project is based on a previous [Spring Web Services example]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}}) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 In this example, we will get access to the HTTP headers by using the `writeTo()` method of the `WebServiceMessage` interface. This method writes the entire message to the given output stream and if the given stream is an instance of `TransportOutputStream`, [the corresponding headers will be written as well](http://docs.spring.io/spring-ws/site/apidocs/org/springframework/ws/WebServiceMessage.html#writeTo(java.io.OutputStream)).
 

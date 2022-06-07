@@ -1,5 +1,5 @@
 ---
-title: "Spring WS Example"
+title: "Spring WS WSDL Example"
 summary: "A detailed step-by-step tutorial on how to implement a SOAP web service using Spring-WS and Spring Boot."
 url: /spring-ws-example.html
 date: 2016-10-12
@@ -21,7 +21,7 @@ So if you're a Spring WS beginner, **you'll love this guide**.
 Let's dive right in…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials](/spring-ws-tutorials) page.
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Spring WS?
@@ -32,7 +32,7 @@ Spring-WS facilitates contract-first [SOAP](https://en.wikipedia.org/wiki/SOAP) 
 
 In this tutorial, we will create a Hello World web service. We start from a WSDL and build both consumer and provider using Spring WS, Spring Boot, and Maven.
 
-The code is organized in such a way that you can choose to only run the [client](/spring-ws-example.html#6-creating-the-client-consumer) (consumer) or [endpoint](/spring-ws-example.html#5-creating-the-endpoint-provider) (provider) part.
+The code is organized in such a way that you can choose to only run the [client]({{< ref "/blog/spring-ws/spring-ws-wsdl-example#creating-the-client-consumer" >}}) (consumer) or [endpoint]({{< ref "/blog/spring-ws/spring-ws-wsdl-example#creating-the-endpoint-provider" >}}) (provider) part.
 
 ## Building a Contract First SOAP Web Service
 

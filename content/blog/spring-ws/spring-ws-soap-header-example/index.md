@@ -15,7 +15,7 @@ The [SOAP header](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383497) 
 The below example details how a web service client can set a SOAP header on an outgoing request. It also illustrates how a server endpoint can then get the SOAP header from an incoming request. Both client and server are realized using Spring-WS, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials](/spring-ws-tutorials) page.
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
 {{< /alert >}}
 
 ## General Project Setup
@@ -26,7 +26,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the project is based on a previous [Spring SOAP web service example](/spring-ws-soap-web-service-consumer-provider-wsdl-example.html) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The setup of the project is based on a previous [Spring SOAP web service example]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}}) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 As the sample ticketing WSDL does not contain any SOAP header we will add an `'clientId'` element in the context of this tutorial.
 

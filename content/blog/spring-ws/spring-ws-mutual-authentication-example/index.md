@@ -16,7 +16,7 @@ aliases:
 This example shows how to configure both client and server so that mutual authentication using certificates is enabled on a web service using Spring-WS, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials](/spring-ws-tutorials) page.
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
 {{< /alert >}}
 
 ## General Project Setup
@@ -28,7 +28,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the project is based on a previous [Spring WS HTTPS example](/spring-ws-https-client-server-example.html) in which we configured the server authentication part. We will extend this setup so that the client also authenticates itself towards the server.
+The setup of the project is based on a previous [Spring WS HTTPS example]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}}) in which we configured the server authentication part. We will extend this setup so that the client also authenticates itself towards the server.
 
 We will again use the `HttpComponentsMessageSender` implementation in below example as it contains more advanced and easy-to-use functionality. On GitHub, however, we have also added a [mutual authentication example that uses the HttpsUrlConnectionMessageSender implementation](https://github.com/code-not-found/spring-ws/tree/master/spring-ws-mutual-authentication) in case a dependency on the `HttpClient` is not desired.
 
@@ -36,7 +36,7 @@ We will again use the `HttpComponentsMessageSender` implementation in below exam
 
 Subsequently execute the following three commands in order to generate the `server-keystore.jks` and `client-truststore.jks` needed to configure the server and client.
 
-> Note that we are specifying a DNS subject alternative name entry (`-ext san=dns:localhost`) matching the `localhost` hostname on the first keytool command. This way we do not need to override the `HostnameVerifier` like we did in the [HTTPS client example](/spring-ws-https-client-server-example.html).
+> Note that we are specifying a DNS subject alternative name entry (`-ext san=dns:localhost`) matching the `localhost` hostname on the first keytool command. This way we do not need to override the `HostnameVerifier` like we did in the [HTTPS client example]({{< ref "/blog/spring-ws/spring-ws-https-client-server-example" >}}).
 
 ``` bash
 keytool -genkeypair -alias server-keypair -keyalg RSA -keysize 2048 -validity 3650 -dname "CN=server,O=codenotfound.com" -keypass server-key-p455w0rd -keystore server-keystore.jks -storepass server-keystore-p455w0rd -ext san=dns:localhost

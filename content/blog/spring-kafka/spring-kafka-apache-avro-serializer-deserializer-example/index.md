@@ -16,7 +16,7 @@ aliases:
 [Apache Avro](https://avro.apache.org/docs/current/) is a data serialization system. It uses JSON for defining data types/protocols and serializes data in a compact binary format. In the following tutorial, we will configure, build and run an example in which we will send/receive an Avro message to/from Apache Kafka using Apache Avro, Spring Kafka, Spring Boot and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka-tutorials).
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup
@@ -44,7 +44,7 @@ Avro relies on schemas composed of primitive types which are defined using JSON.
 
 Avro ships with code generation which allows us to automatically create Java classes based on the above defined `User` schema. Once we have generated the relevant classes, there is no need to use the schema directly in our program. The classes can be generated using the `avro-tools.jar` or via the [Avro Maven plugin](https://mvnrepository.com/artifact/org.apache.avro/avro-maven-plugin), we will use the latter in this example.
 
-We start from a previous [Spring Boot Kafka example](/2016/09/spring-kafka-consumer-producer-example.html) and add the `avro` dependency to the Maven POM file. In addition we configure the `avro-maven-plugin` to run the `schema` goal on all schema's that are found in the `/src/main/resources/avro/` location as shown below.
+We start from a previous [Spring Boot Kafka example]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example" >}}) and add the `avro` dependency to the Maven POM file. In addition we configure the `avro-maven-plugin` to run the `schema` goal on all schema's that are found in the `/src/main/resources/avro/` location as shown below.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -465,7 +465,7 @@ public class Receiver {
 
 ## Test Sending and Receiving Avro Messages on Kafka
 
-The `SpringKafkaApplicationTest` test case demonstrates the above sample code. [An embedded Kafka and ZooKeeper server are automatically started](/spring-kafka-embedded-unit-test-example.html) using a JUnit `ClassRule`. Using `@Before` we wait until all the partitions are assigned to our `Receiver` by looping over the available `ConcurrentMessageListenerContainer` (if we don't do this the message will already be sent before the listeners are assigned to the topic).
+The `SpringKafkaApplicationTest` test case demonstrates the above sample code. [An embedded Kafka and ZooKeeper server are automatically started]({{< ref "/blog/spring-kafka/spring-kafka-embedded-unit-test-example" >}}) using a JUnit `ClassRule`. Using `@Before` we wait until all the partitions are assigned to our `Receiver` by looping over the available `ConcurrentMessageListenerContainer` (if we don't do this the message will already be sent before the listeners are assigned to the topic).
 
 In the `testReceiver()` test case an Avro `User` object is created using the `Builder` methods. This user is then sent to `'avro.t'` topic. Finally, the `CountDownLatch` from the `Receiver` is used to verify that a message was successfully received.
 

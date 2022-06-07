@@ -15,7 +15,7 @@ When implementing a web service client, it is a good practice to take into accou
 The following step by step tutorial illustrates an example in which we will configure a Spring-WS timeout at client side. In addition, we will show how to handle the timeout exception. The example will use Spring Boot and Maven in order to configure, build and run.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials](/spring-ws-tutorials) page.
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
 {{< /alert >}}
 
 ## General Project Setup
@@ -27,7 +27,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the example is based on a previous [Spring WS tutorial](/spring-ws-soap-web-service-consumer-provider-wsdl-example.html) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The setup of the example is based on a previous [Spring WS tutorial]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}}) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 There are two implementations of the `WebServiceMessageSender` interface for sending messages via HTTP. The default implementation is the `HttpUrlConnectionMessageSender`, which uses the facilities provided by Java itself. The alternative is the `HttpComponentsMessageSender`, which uses the [Apache HttpComponents HttpClient](https://hc.apache.org/httpcomponents-client-ga).
 

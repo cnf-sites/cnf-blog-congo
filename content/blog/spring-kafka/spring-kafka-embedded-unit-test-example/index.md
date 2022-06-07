@@ -23,7 +23,7 @@ Using an embedded Kafka broker.
 Let's get started…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka-tutorials).
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
 {{< /alert >}}
 
 ## What is Spring Kafka Test?
@@ -32,7 +32,7 @@ The [Spring Kafka project](https://spring.io/projects/spring-kafka) comes with a
 
 These include an embedded Kafka broker, some static methods to setup consumers/producers and utility methods to fetch results. Let's demonstrate how these test utilities can be used with a code sample.
 
-We will start from a previous [Spring Kafka example](/spring-kafka-consumer-producer-example.html) in which we created a consumer and producer using Spring Kafka, Spring Boot, and Maven.
+We will start from a previous [Spring Kafka example]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example" >}}) in which we created a consumer and producer using Spring Kafka, Spring Boot, and Maven.
 
 A dedicated unit test case for the producer shows how to check that messages are being sent. A second unit test case verifies that messages are received.
 

@@ -22,7 +22,7 @@ Fowler highlights three main points when working with XML:
 The following example will apply the tolerant reader design pattern to both the consumer and provider of a SOAP web service implemented using Spring-WS, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials](/spring-ws-tutorials) page.
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
 {{< /alert >}}
 
 ## General Project Setup
@@ -124,7 +124,7 @@ When describing the tolerant pattern, Fowler uses the example of an order histor
 </wsdl:definitions>
 ```
 
-The main setup of this project is based on a previous [Spring WS step by step example](/spring-ws-soap-web-service-consumer-provider-wsdl-example.html). As such we won't go into detail about the basic configuration of Spring-WS in combination with Spring Boot and Maven.
+The main setup of this project is based on a previous [Spring WS step by step example]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}}). As such we won't go into detail about the basic configuration of Spring-WS in combination with Spring Boot and Maven.
 
 ## Wrap the Data Payload Behind a Convenient Object
 

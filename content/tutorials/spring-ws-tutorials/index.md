@@ -37,15 +37,15 @@ Spring-WS is developed and maintained by [Pivotal Software](https://pivotal.io/)
 
 _If you would like to request a new tutorial, leave a comment below._
 
-* [Spring WS Example](/spring-ws-example.html)
-* [Spring WS - SOAPAction Header Example](/spring-ws-soapaction-header-example.html)
-* [Spring WS - SOAP Header Example](/spring-ws-soap-header-example.html)
-* [Spring WS - Basic Authentication Example](/spring-ws-basic-authentication-example.html)
-* [Spring WS - HTTPS Client Server Example](/spring-ws-https-client-server-example.html)
-* [Spring WS - Mutual Authentication Example](/spring-ws-mutual-authentication-example.html)
-* [Spring WS - Client Timeout Example](/spring-ws-client-timeout-example.html)
-* [Spring WS - Log Client Server HTTP Headers Example](/spring-ws-log-client-server-http-headers.html)
-* [Spring WS - SOAP Tolerant Reader Example](/spring-ws-soap-tolerant-reader-example.html)
+* [Spring WS WSDL Example]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}})
+* [Spring WS SOAPAction Header Example]({{< ref "/blog/spring-ws/spring-ws-soapaction-header-example" >}})
+* [Spring WS SOAP Header Example]({{< ref "/blog/spring-ws/spring-ws-soap-header-example" >}})
+* [Spring WS Basic Authentication Example]({{< ref "/blog/spring-ws/spring-ws-basic-authentication-example" >}})
+* [Spring WS HTTPS Client Server Example]({{< ref "/blog/spring-ws/spring-ws-https-client-server-example" >}})
+* [Spring WS Mutual Authentication Example]({{< ref "/blog/spring-ws/spring-ws-mutual-authentication-example" >}})
+* [Spring WS Client Timeout Example]({{< ref "/blog/spring-ws/spring-ws-client-timeout-example" >}})
+* [Spring WS Log Client Server HTTP Headers Example]({{< ref "/blog/spring-ws/spring-ws-log-client-server-http-headers-example" >}})
+* [Spring WS Tolerant Reader Example]({{< ref "/blog/spring-ws/spring-ws-tolerant-reader-example" >}})
 
 ## References
 

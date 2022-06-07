@@ -15,7 +15,7 @@ aliases:
 The following example shows how to setup a batch listener using Spring Kafka, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka-tutorials).
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup
@@ -26,7 +26,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The general project and `Sender` configuration are identical to a previous [Spring Boot Kafka example](/spring-kafka-consumer-producer-example.html). As such we won't go into detail on how these are setup.
+The general project and `Sender` configuration are identical to a previous [Spring Boot Kafka example]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example" >}}). As such we won't go into detail on how these are setup.
 
 ## Configuring a Batch Listener and Batch Size
 
@@ -143,7 +143,7 @@ public class Receiver {
 
 ## Testing the Batch Listener
 
-The `SpringKafkaApplicationTest` test case starts an [embedded Kafka and ZooKeeper server](/spring-kafka-embedded-unit-test-example.html) using a JUnit `ClassRule`.
+The `SpringKafkaApplicationTest` test case starts an [embedded Kafka and ZooKeeper server]({{< ref "/blog/spring-kafka/spring-kafka-embedded-unit-test-example" >}}) using a JUnit `ClassRule`.
 
 Using `@Before` we wait until all the partitions are assigned to our `Receiver` by looping over the available `ConcurrentMessageListenerContainer` (if we don't do this the message will already be sent before the listeners are assigned to the topic).
 

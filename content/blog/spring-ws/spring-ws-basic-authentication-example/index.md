@@ -34,8 +34,9 @@ The credentials are provided as a HTTP header field called `'Authorization'` whi
 
 Instead of writing custom code to create and check the HTTP authorization header we will configure Spring WS and Spring Boot to do the work for us. The below example illustrates how a client and server can be configured to apply basic access authentication using Spring-WS, Spring Boot, and Maven.
 
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials page](/spring-ws-tutorials).
-{: .notice--primary}
+{{< alert "lightbulb" >}}
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
+{{< /alert >}}
 
 ## General Project Setup
 
@@ -47,7 +48,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the sample is based on a previous [Spring WS tutorial](/spring-ws-soap-web-service-consumer-provider-wsdl-example.html) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The setup of the sample is based on a previous [Spring WS tutorial]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}}) in which we have swapped out the basic `helloworld.wsdl` for a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 There are two implementations of the `WebServiceMessageSender` interface for sending messages via HTTP. The default implementation is the `HttpUrlConnectionMessageSender`, which uses the facilities provided by Java itself. The alternative is the `HttpComponentsMessageSender`, which uses the [Apache HttpComponents HttpClient](https://hc.apache.org/httpcomponents-client-ga).
 
@@ -239,7 +240,7 @@ In order to test the configuration we just run the `SpringWsApplicationTests` un
 mvn test
 ```
 
-The test case will run successfully as basic authentication is correctly configured on both sides. By default, the basic authentication header is not logged but if you want you can add some custom code in order to have [Spring-WS log all the client HTTP headers](/spring-ws-log-client-server-http-headers.html).
+The test case will run successfully as basic authentication is correctly configured on both sides. By default, the basic authentication header is not logged but if you want you can add some custom code in order to have [Spring-WS log all the client HTTP headers]({{< ref "/blog/spring-ws/spring-ws-log-client-server-http-headers-example" >}}).
 
 ``` bash
   .   ____          _            __ _ _

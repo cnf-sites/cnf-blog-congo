@@ -12,10 +12,10 @@ aliases:
 
 [Spring Boot auto-configuration](http://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-auto-configuration.html) attempts to automatically configure your Spring application based on the JAR dependencies that have been added. In other words, if the `spring-kafka-1.2.2.RELEASE.jar` is on the classpath and you have not manually configured any `Consumer` or `Provider` beans, then Spring Boot will auto-configure them using default values.
 
-In order to demonstrate this behavior we will start from a previous [Spring Kafka tutorial](/spring-kafka-consumer-producer-example.html) in which we send/receive messages to/from an Apache Kafka topic using Spring Kafka. The original code will be reduced to a bare minimum in order to demonstrate Spring Boot's autoconfiguration.
+In order to demonstrate this behavior we will start from a previous [Spring Kafka tutorial]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example" >}}) in which we send/receive messages to/from an Apache Kafka topic using Spring Kafka. The original code will be reduced to a bare minimum in order to demonstrate Spring Boot's autoconfiguration.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka-tutorials).
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup

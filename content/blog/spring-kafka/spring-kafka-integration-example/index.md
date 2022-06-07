@@ -18,7 +18,7 @@ The [Spring Integration Kafka](https://github.com/spring-projects/spring-integra
 In this tutorial, we will configure, build and run a Hello World example in which we will send/receive messages to/from Apache Kafka using Spring Integration Kafka, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka-tutorials).
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
 {{< /alert >}}
 
 ## General Project Setup
@@ -147,7 +147,7 @@ Next, we create the `KafkaProducerMessageHandler` that will send messages receiv
 
 To illustrate that static values can also be set directly on the adapter, we assign a fix `'kafka-integration'` `kafka_messageKey` header by using `setMessageKeyExpression()`.
 
-The `KafkaProducerMessageHandler` constructor requires a `KafkaTemplate` to be passed as a parameter. We create the template using a `ProducerFactory` and corresponding configuration. For more detailed information you can check the [Spring Kafka Producer tutorial section](/spring-kafka-consumer-producer-example.html#create-a-spring-kafka-message-producer).
+The `KafkaProducerMessageHandler` constructor requires a `KafkaTemplate` to be passed as a parameter. We create the template using a `ProducerFactory` and corresponding configuration. For more detailed information you can check the [Spring Kafka Producer tutorial section]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example#create-a-spring-kafka-message-producer" >}}).
 
 The `KafkaProducerMessageHandler` is attached to the _ProducingChannel_ using the `@ServiceActivator` annotation. As `inputChannel` we need to specify the _ProducingChannel_ as a key/value pair in order to make the link.
 
@@ -224,7 +224,7 @@ We create a `KafkaMessageDrivenChannelAdapter` that can receive messages from on
 
 In order to test our setup, a `CountDownLatchHandler` bean is defined that is linked to the _ConsumingChannel_ using the `@ServiceActivator` annotation.
 
-In this example we setup the `MessageListenerContainer` using the `KafkaMessageListenerContainer` implementation. This is very similar to what we did in the [Spring Kakfa Consumer tutorial section](/spring-kafka-consumer-producer-example.html#create-a-spring-kafka-message-consumer). As such we won't go into further details.
+In this example we setup the `MessageListenerContainer` using the `KafkaMessageListenerContainer` implementation. This is very similar to what we did in the [Spring Kakfa Consumer tutorial section]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example#create-a-spring-kafka-message-consumer" >}}). As such we won't go into further details.
 
 > One small difference to note is the fact that we set the `AUTO_OFFSET_RESET_CONFIG` to `earliest`. This is done to avoid that the listener "misses" messages that have been sent before it was fully initialized.
 
@@ -338,7 +338,7 @@ public class CountDownLatchHandler implements MessageHandler {
 
 ## Spring Integration Kafka Test
 
-Let's test the example using below `SpringKafkaIntegrationApplicationTest` unit test case. We setup an embedded Kafka broker using the JUnit `@ClassRule` annotation as we have seen in a previous [Spring Kafka test example](/spring-kafka-embedded-unit-test-example.html).
+Let's test the example using below `SpringKafkaIntegrationApplicationTest` unit test case. We setup an embedded Kafka broker using the JUnit `@ClassRule` annotation as we have seen in a previous [Spring Kafka test example]({{< ref "/blog/spring-kafka/spring-kafka-embedded-unit-test-example" >}}).
 
 In order to get hold of our _ProducingChannel_, we auto-wire the `ApplicationContext` and use the `getBean()` method. We then create a for loop in which we sent 10 messages to the `'spring-integration-kafka.t'` topic using the channel's `send()` method. Note that we set the topic by adding a message header `Map` which contains the `KafkaHeaders.TOPIC` value which corresponds to the destination topic name.
 

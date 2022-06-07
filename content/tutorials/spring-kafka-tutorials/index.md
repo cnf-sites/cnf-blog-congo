@@ -37,15 +37,14 @@ Spring Kafka is a [Spring main project](https://spring.io/projects). It is devel
 
 _If you would like to request a new tutorial, leave a comment below._
 
-* [Spring Kafka Consumer Producer Example](/spring-kafka-consumer-producer-example.html)
-* [Spring Kafka Embedded Unit Test Example](/spring-kafka-embedded-unit-test-example.html)
-* [Spring Kafka - Spring Boot Example](/spring-kafka-boot-example.html)
-* [Spring Kafka - Batch Listener Example](/spring-kafka-batch-listener-example.html)
-* [Spring Kafka - JSON Serializer Deserializer Example](/spring-kafka-json-serializer-deserializer-example.html)
-* [Spring Kafka - Apache Avro Serializer Deserializer Example](/spring-kafka-apache-avro-serializer-deserializer-example.html)
-* [Spring Kafka - Avro Bijection Example](/spring-kafka-avro-bijection-example.html)
-* [Spring Kafka - Spring Integration Example](/spring-kafka-spring-integration-example.html)
-* [Apache Kafka - Download &amp; Installation](/apache-kafka-download-installation.html)
+* [Spring Kafka Consumer Producer Example]({{< ref "/blog/spring-kafka/spring-kafka-consumer-producer-example" >}})
+* [Spring Kafka Embedded Unit Test Example]({{< ref "/blog/spring-kafka/spring-kafka-embedded-unit-test-example" >}})
+* [Spring Kafka Spring Boot Example]({{< ref "/blog/spring-kafka/spring-kafka-boot-example" >}})
+* [Spring Kafka Batch Listener Example]({{< ref "/blog/spring-kafka/spring-kafka-batch-listener-example" >}})
+* [Spring Kafka JSON Serializer Deserializer Example]({{< ref "/blog/spring-kafka/spring-kafka-json-serializer-deserializer-example" >}})
+* [Spring Kafka Apache Avro Serializer Deserializer Example]({{< ref "/blog/spring-kafka/spring-kafka-apache-avro-serializer-deserializer-example" >}})
+* [Spring Kafka Avro Bijection Example]({{< ref "/blog/spring-kafka/spring-kafka-avro-bijection-example" >}})
+* [Spring Kafka Integration Example]({{< ref "/blog/spring-kafka/spring-kafka-integration-example" >}})
 
 ## References
 

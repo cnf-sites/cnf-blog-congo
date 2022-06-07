@@ -15,8 +15,9 @@ aliases:
 
 In the following tutorial, we will configure, build and run an example in which we will send/receive an Avro message to/from Apache Kafka using Bijection, Apache Avro, Spring Kafka, Spring Boot and Maven.
 
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka/).
-{: .notice--primary}
+{{< alert "lightbulb" >}}
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
+{{< /alert >}}
 
 ## General Project Setup
 
@@ -28,7 +29,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-We base this example on a previous [Spring Kafka Avro serializer/deserializer example](/spring-kafka-apache-avro-serializer-deserializer-example.html) in which we used the Avro API's to serialize and deserialize objects. For this code sample, we will be using the Bijection APIs which are a bit easier to use as we will see further down below.
+We base this example on a previous [Spring Kafka Avro serializer/deserializer example]({{< ref "/blog/spring-kafka/spring-kafka-apache-avro-serializer-deserializer-example" >}}) in which we used the Avro API's to serialize and deserialize objects. For this code sample, we will be using the Bijection APIs which are a bit easier to use as we will see further down below.
 
 Starting point is again the `user.avsc` schema from the [Avro getting started guide](https://avro.apache.org/docs/current/gettingstartedjava.html#Defining+a+schema). It describes the fields and their types of a `User` type.
 
@@ -273,7 +274,7 @@ public class AvroDeserializer<T extends SpecificRecordBase> implements Deseriali
 
 ## Test Sending and Receiving Avro Messages on Kafka
 
-The `SpringKafkaApplicationTest` test case demonstrates the above sample code. [An embedded Kafka and ZooKeeper server are automatically started](/spring-kafka-embedded-unit-test-example.html) using a JUnit `ClassRule`.
+The `SpringKafkaApplicationTest` test case demonstrates the above sample code. [An embedded Kafka and ZooKeeper server are automatically started]({{< ref "/blog/spring-kafka/spring-kafka-embedded-unit-test-example" >}}) using a JUnit `ClassRule`.
 
 Using `@Before` we wait until all the partitions are assigned to our `Receiver` by looping over the available `ConcurrentMessageListenerContainer` (if we don't do this the message will already be sent before the listeners are assigned to the topic).
 

@@ -17,7 +17,7 @@ A web service exposed on HTTPS provides **authentication** of the associated web
 The following example shows how to configure both client and server in order to consume and respectively expose a web service over HTTPS using Spring-WS, Spring Boot, and Maven.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring WS - head on over to the [Spring WS tutorials](/spring-ws-tutorials) page.
+If you want to learn more about Spring WS - head on over to the [Spring WS tutorials]({{< ref "/tutorials/spring-ws-tutorials" >}}) page.
 {{< /alert >}}
 
 ## General Project Setup
@@ -29,7 +29,7 @@ Tools used:
 * Spring Boot 1.5
 * Maven 3.5
 
-The setup of the project is based on a previous [Spring WS example](/spring-ws-soap-web-service-consumer-provider-wsdl-example.html) but the basic `helloworld.wsdl` has been replaced by a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
+The setup of the project is based on a previous [Spring WS example]({{< ref "/blog/spring-ws/spring-ws-wsdl-example" >}}) but the basic `helloworld.wsdl` has been replaced by a more generic `ticketagent.wsdl` from the [W3C WSDL 1.1 specification](https://www.w3.org/TR/wsdl11elementidentifiers/#Iri-ref-ex).
 
 There are two implementations of the `WebServiceMessageSender` interface for sending messages via HTTPS. The default implementation is the `HttpsUrlConnectionMessageSender`, which uses the facilities provided by Java itself. The alternative is the `HttpComponentsMessageSender`, which uses the [Apache HttpComponents HttpClient](https://hc.apache.org/httpcomponents-client-ga).
 
@@ -186,7 +186,7 @@ javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No
 
 The reason for this is that when the HTTPS client connects to a server, it's not enough for a certificate to be trusted, it also has to match the server you want to talk to. In other words, the client verifies that the hostname in the certificate matches the hostname of the server. For more detailed information check [this answer on Stack Overflow](http://stackoverflow.com/a/3093650/4201470).
 
-In order to fix this problem, we could regenerate the server keypair so it contains `'localhost'`. You can find the needed keytool command in the [Spring WS mutual authentication tutorial](/spring-ws-mutual-authentication-example.html).
+In order to fix this problem, we could regenerate the server keypair so it contains `'localhost'`. You can find the needed keytool command in the [Spring WS mutual authentication tutorial]({{< ref "/blog/spring-ws/spring-ws-mutual-authentication-example" >}}).
 
 Another option, which we will use in this example, is to turn hostname verification off. Apache ships a `NoopHostnameVerifier` that can be used for this. Simply pass an instance to the `SSLConnectionSocketFactory` constructor. Note that this is not something you would want to do in production!
 

@@ -17,7 +17,7 @@ So if you're a Spring Kafka beginner, **you'll love this guide**.
 Let's get started.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page](/spring-kafka-tutorials).
+If you want to learn more about Spring Kafka - head on over to the [Spring Kafka tutorials page]({{< ref "/tutorials/spring-kafka-tutorials" >}}).
 {{< /alert >}}
 
 ## What is Spring Kafka?
@@ -157,7 +157,7 @@ kafka:
   bootstrap-servers: localhost:9092
 ```
 
-> This example will send/receive a simple `String`. If you would like to send more complex objects you could, for example, use an [Avro Kafka serializer](/spring-kafka-apache-avro-serializer-deserializer-example.html) or the [Kafka Jsonserializer](/spring-kafka-json-serializer-deserializer-example.html) that ships with Spring Kafka.
+> This example will send/receive a simple `String`. If you would like to send more complex objects you could, for example, use an [Avro Kafka serializer]({{< ref "/blog/spring-kafka/spring-kafka-apache-avro-serializer-deserializer-example" >}}) or the [Kafka Jsonserializer]({{< ref "/blog/spring-kafka/spring-kafka-json-serializer-deserializer-example" >}}) that ships with Spring Kafka.
 
 ## Create a Spring Kafka Message Producer
 
@@ -384,7 +384,7 @@ kafka:
   bootstrap-servers: ${spring.embedded.kafka.brokers}
 ```
 
-> Below test case can also be executed after you [install Kafka and Zookeeper](/apache-kafka-download-installation.html) on your local system. Just comment out `@EmbeddedKafka` and change the `bootstrap-servers` property of the application properties file located in `src/test/resources` to the address of the local broker.
+> Below test case can also be executed after you [install Kafka and Zookeeper]({{< ref "/blog/spring-kafka/apache-kafka-download-installation-windows" >}}) on your local system. Just comment out `@EmbeddedKafka` and change the `bootstrap-servers` property of the application properties file located in `src/test/resources` to the address of the local broker.
 
 ``` java
 package com.codenotfound.kafka;
