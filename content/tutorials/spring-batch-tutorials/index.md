@@ -34,9 +34,9 @@ It is developed and maintained by [Pivotal Software](https://pivotal.io/).
 
 ## Tutorials
 
-* [Spring Batch Hello World Example](/spring-batch-example.html)
-* [Spring Batch Admin Example](/spring-batch-admin-example.html)
-* [Spring Batch Tasklet Example](/spring-batch-tasklet-example.html)
+* [Spring Batch Hello World Example]({{< ref "/blog/spring-batch/spring-batch-example" >}})
+* [Spring Batch Admin Example]({{< ref "/blog/spring-batch/spring-batch-admin-example" >}})
+* [Spring Batch Tasklet Example]({{< ref "/blog/spring-batch/spring-batch-tasklet-example" >}})
 
 _If you would like to request a new tutorial, leave a comment below._
 

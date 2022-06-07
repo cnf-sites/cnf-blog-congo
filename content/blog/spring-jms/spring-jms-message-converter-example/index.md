@@ -17,7 +17,7 @@ It's really easy to do.
 So let's get down to business
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is a Message Converter?
@@ -26,7 +26,7 @@ A `MessageConverter` specifies how to convert between Java objects and JMS messa
 
 Spring JMS comes with a number of implementations that are ready to use. By default, the `SimpleMessageConverter` is used by the framework. It is able to handle TextMessages, BytesMessages, MapMessages, and ObjectMessages.
 
-Let's build an example to show how you can use a message converter with Spring JMS. We start from a previous [Spring with JMS example](/spring-jms-annotations-example.html). We will adapt it so that we can send a `Person` object that gets converted to/from JSON.
+Let's build an example to show how you can use a message converter with Spring JMS. We start from a previous [Spring with JMS example]({{< ref "/blog/spring-jms/spring-jms-annotations-example" >}}). We will adapt it so that we can send a `Person` object that gets converted to/from JSON.
 
 > Note that Spring JMS ships with a `MappingJackson2MessageConverter` that converts messages to and from JSON. We will not use it and create our own custom implementation instead.
 
@@ -101,7 +101,7 @@ The conversion between a Java object and JSON is done using a [Jackson](https://
 
 Annotate the class with `@Component` so that Spring registers the class as a Bean. When Spring Boot detects this class it is [auto-configured on both the JmsTemplate and DefaultJmsListenerContainerFactory](https://github.com/spring-projects/spring-boot/pull/4284).
 
-> You can also set the `MessageConverter` on the `JmsTemplate` and `MessageListenerContainer` using `setMessageConverter()`. But this means you need to create these Beans as we saw in a previous [Spring JMS Example](/spring-jms-activemq-example.html).
+> You can also set the `MessageConverter` on the `JmsTemplate` and `MessageListenerContainer` using `setMessageConverter()`. But this means you need to create these Beans as we saw in a previous [Spring JMS Example]({{< ref "/blog/spring-jms/spring-jms-activemq-example" >}}).
 
 ``` java
 package com.codenotfound.jms;

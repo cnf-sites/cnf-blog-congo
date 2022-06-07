@@ -19,7 +19,7 @@ So if you're starting a new project, give it a try.
 Let's take a closer look.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Apache ActiveMQ Artemis?
@@ -126,7 +126,7 @@ Also, the plugin allows you to start the example via a Maven command.
 </project>
 ```
 
-The project is for a large part identical to a previous [Spring JMS ActiveMQ example](/spring-jms-activemq-example.html). As such we will only detail the changes that are needed to connect to Artemis.
+The project is for a large part identical to a previous [Spring JMS ActiveMQ example]({{< ref "/blog/spring-jms/spring-jms-activemq-example" >}}). As such we will only detail the changes that are needed to connect to Artemis.
 
 ## Create a Spring JMS Message Producer
 

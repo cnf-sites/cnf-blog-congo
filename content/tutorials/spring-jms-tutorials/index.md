@@ -35,16 +35,16 @@ Spring JMS is developed and maintained by [Pivotal Software](https://pivotal.io/
 
 ## Tutorials
 
-* [Spring JMS ActiveMQ Example](/spring-jms-activemq-example.html)
-* [Spring JMS Artemis Example](/spring-jms-artemis-example.html)
-* [Spring JMS JmsTemplate Example](/spring-jms-jmstemplate-example.html)
-* [Spring JMS Listener Example](/spring-jms-listener-example.html)
-* [Spring JMS Annotations Example](/spring-jms-annotations-example.html)
-* [Spring JMS Integration Example](/spring-jms-integration-example.html)
-* [Spring JMS Integration Gateway Example](/spring-jms-integration-gateway-example.html)
-* [Spring JMS Message Converter Example](/spring-jms-message-converter-example.html)
-* [Spring JMS Message Selector Example](/spring-jms-message-selector-example.html)
-* [Spring JMS Topic Example](/spring-jms-topic-example.html)
+* [Spring JMS ActiveMQ Example]({{< ref "/blog/spring-jms/spring-jms-activemq-example" >}})
+* [Spring JMS Artemis Example]({{< ref "/blog/spring-jms/spring-jms-artemis-example" >}})
+* [Spring JMS JmsTemplate Example]({{< ref "/blog/spring-jms/spring-jms-jmstemplate-example" >}})
+* [Spring JMS Listener Example]({{< ref "/blog/spring-jms/spring-jms-listener-example" >}})
+* [Spring JMS Annotations Example]({{< ref "/blog/spring-jms/spring-jms-annotations-example" >}})
+* [Spring JMS Integration Example]({{< ref "/blog/spring-jms/spring-jms-integration-example" >}})
+* [Spring JMS Integration Gateway Example]({{< ref "/blog/spring-jms/spring-jms-integration-gateway-example" >}})
+* [Spring JMS Message Converter Example]({{< ref "/blog/spring-jms/spring-jms-message-converter-example" >}})
+* [Spring JMS Message Selector Example]({{< ref "/blog/spring-jms/spring-jms-message-selector-example" >}})
+* [Spring JMS Topic Example]({{< ref "/blog/spring-jms/spring-jms-topic-example" >}})
 
 _If you would like to request a new tutorial, leave a comment below._
 

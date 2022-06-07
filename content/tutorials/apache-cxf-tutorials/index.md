@@ -37,7 +37,7 @@ It is part of the [Apache Software Foundation](https://www.apache.org/). A decen
 _If you would like to request a new tutorial, leave a comment below._
 
 * [Apache CXF - Spring Boot SOAP Web Service Client Server Example](/apache-cxf-spring-boot-soap-web-service-client-server-example.html)
-* [CXF - Feature vs Interceptor](/cxf-feature-vs-interceptor.html)
+* [Apache CXF - Feature vs Interceptor](/cxf-feature-vs-interceptor.html)
 * [Apache CXF - SOAP Header Example](/apache-cxf-soap-header-example.html)
 * [Apache CXF - Basic Authentication Example](/apache-cxf-basic-authentication-example.html)
 * [Apache CXF - Logging SOAP Request Response Fault Messages Example](/apache-cxf-logging-soap-request-response-fault-messages-example.html)

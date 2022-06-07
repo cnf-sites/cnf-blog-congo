@@ -15,7 +15,7 @@ So if you want a to know how to **publish/subscribe** with [Spring JMS](https://
 Keep reading…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is a Topic?
@@ -26,7 +26,7 @@ It implements publish and subscribe semantics. When you publish a message **it g
 
 Let's build an example where we send a JMS message to a topic using Spring JMS. On the topic, we will register two subscribers who will each receive the message.
 
-We start from a previous [Spring JMS sample application](/spring-jms-activemq-example.html).
+We start from a previous [Spring JMS sample application]({{< ref "/blog/spring-jms/spring-jms-activemq-example" >}}).
 
 ## General Project Overview
 
@@ -48,13 +48,13 @@ Spring JMS components distinguish between [two types of JMS domains](https://doc
 1. A point-to-point domain that uses queues
 2. A publish-subscribe domain that uses topics
 
-This means that when you [use the JmsTemplate to send JMS messages](/spring-jms-jmstemplate-example.html), it can send to queues or topics but not both at the same time!
+This means that when you [use the JmsTemplate to send JMS messages]({{< ref "/blog/spring-jms/spring-jms-jmstemplate-example" >}}), it can send to queues or topics but not both at the same time!
 
 The boolean property `pubSubDomain` is used to configure the `JmsTemplate` with knowledge of what JMS domain is being used. By default, the value of this property is `false`. This indicates that`queues` are used.
 
 As we want to send a message to a topic we need to update our `SenderConfig` configuration. Use the `setPubSubDomain()` method on the `JmsTemplate` to set `pubSubDomain` to `true`.
 
-> If you are using the [autoconfigured JmsTemplate](/spring-jms-annotations-example.html) you can change the JMS domain by setting the `spring.jms.pub-sub-domain` [application property (# JMS section)](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html).
+> If you are using the [autoconfigured JmsTemplate]({{< ref "/blog/spring-jms/spring-jms-annotations-example" >}}) you can change the JMS domain by setting the `spring.jms.pub-sub-domain` [application property (# JMS section)](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html).
 
 ``` java
 package com.codenotfound.jms;

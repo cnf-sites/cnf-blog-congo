@@ -21,7 +21,7 @@ So if you're a Spring JMS beginner, **you'll love this guide**.
 Let's get this show on the road!
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Spring JMS?
@@ -155,9 +155,9 @@ In the below `Sender` class, the `JmsTemplate` is auto-wired as the actual creat
 
 In this tutorial we will use the `convertAndSend()` method which sends the given object to the `helloworld.q` destination, converting the object to a JMS message.
 
-The [type of JMS message](/jms-message-types-properties-overview.html#jms-message-body) depends on the type of the object being passed. In the case of a `String`, a JMS `TextMessage` will be created.
+The [type of JMS message]({{< ref "/blog/java-jms/jms-message-types-properties-overview#jms-message-body" >}}) depends on the type of the object being passed. In the case of a `String`, a JMS `TextMessage` will be created.
 
-> For more detailed information on how to send JMS messages, check the [Spring JmsTemplate Example](/spring-jms-jmstemplate-example.html).
+> For more detailed information on how to send JMS messages, check the [Spring JmsTemplate Example]({{< ref "/blog/spring-jms/spring-jms-jmstemplate-example" >}}/).
 
 ``` java
 package com.codenotfound.jms;
@@ -289,7 +289,7 @@ Contrary to the `JmsTemplate` ideally [don't use Spring's CachingConnectionFacto
 
 As we are connecting to ActiveMQ, an `ActiveMQConnectionFactory` is created and passed in the constructor of the `DefaultJmsListenerContainerFactory`.
 
-> More details on how to receive JMS messages can be found in the [Spring JMS Listener Example](/spring-jms-listener-example.html).
+> More details on how to receive JMS messages can be found in the [Spring JMS Listener Example]({{< ref "/blog/spring-jms/spring-jms-listener-example" >}}).
 
 ``` java
 package com.codenotfound.jms;
@@ -431,7 +431,7 @@ Maven will download the dependencies, compile the code and run the unit test cas
 [INFO] ------------------------------------------------------------------------
 ```
 
-Above test case can also be executed after you [install Apache ActiveMQ](/jms-apache-activemq-installation.html) on your local system.
+Above test case can also be executed after you [install Apache ActiveMQ]({{< ref "/blog/spring-jms/apache-activemq-installation" >}}) on your local system.
 
 Simply change the `activemq:broker-url` property to point to `tcp://localhost:61616` in case the broker is running on the default URL.
 

@@ -17,7 +17,7 @@ Then, I'll build a detailed example.
 Sound good? Let's dive right in…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is a Spring JMS Listener?
@@ -28,11 +28,11 @@ A [message listener container](https://docs.spring.io/spring/docs/current/javado
 
 The one restriction on an MDP is that it must implement the [MessageListener](https://javaee.github.io/javaee-spec/javadocs/javax/jms/MessageListener.html) interface.
 
-> Note that you can also [synchronously receive JMS messages using the JmsTemplate](/spring-jms-jmstemplate-example.html).
+> Note that you can also [synchronously receive JMS messages using the JmsTemplate]({{< ref "/blog/spring-jms/spring-jms-jmstemplate-example" >}}).
 
 Let's show how the above concepts work.
 
-We start from a previous [Spring JMS Example using ActiveMQ](/spring-jms-activemq-example.html).
+We start from a previous [Spring JMS Example using ActiveMQ]({{< ref "/blog/spring-jms/spring-jms-activemq-example" >}}).
 
 We adapt it so that an order message is sent to an order queue. A JMS listener will pick up the message and send a status message to two different status queues. On each queue, a different message listener container will read the status.
 

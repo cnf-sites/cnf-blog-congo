@@ -20,7 +20,7 @@ So if you want to get up and running with a minimum amount of coding, then you'l
 Let's jump right in…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Spring Boot Auto-Configuration?
@@ -29,7 +29,7 @@ If you want to learn more about Spring JMS - head on over to the [Spring JMS tut
 
 In other words, if the `spring-jms` and `activemq-broker` dependencies are on the classpath and you have not manually configured the `ConnectionFactory`, `JmsTemplate` or `JmsListenerContainerFactory` beans, then Spring Boot will auto-configure them for you using default values.
 
-To show this behavior we will start from a previous [Spring JMS tutorial](/spring-jms-activemq-example.html) in which we send/receive messages to/from ActiveMQ using Spring JMS.
+To show this behavior we will start from a previous [Spring JMS tutorial]({{< ref "/blog/spring-jms/spring-jms-activemq-example" >}}) in which we send/receive messages to/from ActiveMQ using Spring JMS.
 
 The original code will be reduced to a bare minimum in order to demonstrate Spring Boot's autoconfiguration capabilities.
 

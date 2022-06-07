@@ -19,7 +19,7 @@ And how to set it up.
 Let's dive right in.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring Batch - head on over to the [Spring Batch tutorials page](/spring-batch-tutorials).
+If you want to learn more about Spring Batch - head on over to the [Spring Batch tutorials page]({{< ref "/tutorials/spring-batch-tutorials" >}}).
 {{< /alert >}}
 
 ## What is Spring Batch Admin?
@@ -30,7 +30,7 @@ Spring Batch Admin provides a web-based user interface (UI) that allows you to m
 
 Let's show how you can configure Spring Cloud Data Flow to run a batch job.
 
-We re-use the [Spring Batch capitalize names](https://github.com/code-not-found/spring-batch/tree/master/spring-batch-capitalize-names) project. It contains a batch job that converts person names from lower case into upper case.
+We use the following [Spring Batch capitalize names](https://github.com/code-not-found/spring-batch/tree/master/spring-batch-capitalize-names) project. It contains a batch job that converts person names from lower case into upper case.
 
 We then start a Spring Cloud Data Flow server and configure the batch job. Using the web-based UI we launch the job and check the status.
 
@@ -54,7 +54,7 @@ And one for Spring Cloud Data Flow:
 
 ## Creating a Spring Batch Task
 
-The basic Maven and Spring Boot setup of this project are identical to a previous [Spring Batch example](/spring-batch-example.html). As such we will not cover them in this post.
+The basic Maven and Spring Boot setup of this project are identical to a previous [Spring Batch Hello World example]({{< ref "/blog/spring-batch/spring-batch-example" >}}). As such we will not cover them in this post.
 
 Spring Cloud Data Flow is **a toolkit for building data processing pipelines**. The pipelines consist of Spring Boot applications. This means we can run a Spring Boot batch job using a Data Flow server.
 

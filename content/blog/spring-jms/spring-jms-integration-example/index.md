@@ -17,7 +17,7 @@ We will build an example that covers both the sending and receiving of JMS messa
 Let's dive right in.
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Spring Integration?
@@ -64,7 +64,7 @@ Our project has the following directory structure:
 
 ## Maven Setup
 
-We start from a previous [Spring JMS Boot example](/spring-jms-annotations-example.html) for the setup of our project.
+We start from a previous [Spring JMS Boot example]({{< ref "/blog/spring-jms/spring-jms-annotations-example" >}}) for the setup of our project.
 
 To use the different Spring Integration JMS components we need to add the `spring-integration-jms` dependency.
 
@@ -174,7 +174,7 @@ Similar to the _ProducingChannel_, we specify a _ConsumingChannel_ using the `Di
 
 We then create a `JmsMessageDrivenEndpoint` that can receive JMS messages. The constructor takes a `MessageListenerContainer` and `ChannelPublishingJmsMessageListener` as an input parameters.
 
-> For details on the container we refer to the [Spring JMS listener example](//spring-jms-listener-example.html).
+> For details on the container we refer to the [Spring JMS listener example]({{< ref "/blog/spring-jms/spring-jms-listener-example" >}}).
 
 The `ChannelPublishingJmsMessageListener` creates a listener that converts a JMS Message into a Spring Integration Message and sends that message to a channel.
 

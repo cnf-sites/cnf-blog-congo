@@ -17,7 +17,7 @@ You're going to see a detailed example to get you up and running in record time.
 So without further ado, let's get started…
 
 {{< alert "lightbulb" >}}
-If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials](/spring-jms-tutorials) page.
+If you want to learn more about Spring JMS - head on over to the [Spring JMS tutorials]({{< ref "/tutorials/spring-jms-tutorials" >}}) page.
 {{< /alert >}}
 
 ## What is Spring JmsTemplate?
@@ -28,7 +28,7 @@ It simplifies the use of [JMS](https://en.wikipedia.org/wiki/Java_Message_Servic
 
 Let's create a code sample that shows how to configure the Spring `JmsTemplate`. We will send an order message to an `order` queue and then synchronously receive a status message from a `status` queue.
 
-We start from a previous [Spring JMS example with ActiveMQ](/spring-jms-activemq-example.html).
+We start from a previous [Spring JMS example with ActiveMQ]({{< ref "/blog/spring-jms/spring-jms-activemq-example" >}}).
 
 ## General Project Overview
 
@@ -69,7 +69,7 @@ In addition, we set the `defaultDestination` to which messages should be sent. A
 
 For more information check the [JmsTemplate documentation](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jms/core/JmsTemplate.html).
 
-> If you use [Spring JMS autoconfiguration](/spring-jms-annotations-example.html) you can use the [Spring Boot JMS application properties](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html) (# JMS section) to set the above options.
+> If you use [Spring JMS autoconfiguration]({{< ref "/blog/spring-jms/spring-jms-annotations-example" >}}) you can use the [Spring Boot JMS application properties](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html) (# JMS section) to set the above options.
 
 ``` java
 package com.codenotfound.jms;
@@ -152,7 +152,7 @@ We use a `MessagePostProcessor` to retrieve the `JMSMessageID`. This is a JMS he
 
 In the `receiveOrderStatus()` method we use the `receiveSelectedAndConvert()` method to synchronously receive a status message. This means that this method will block until it receives the message.
 
-We use a [Spring JMS message selector](/spring-jms-message-selector-example.html) to receive the status for the order previously sent.
+We use a [Spring JMS message selector]({{< ref "/blog/spring-jms/spring-jms-message-selector-example" >}}) to receive the status for the order previously sent.
 
 ``` java
 package com.codenotfound.jms;
