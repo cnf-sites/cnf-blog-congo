@@ -1,0 +1,8 @@
+# config/_default/config.toml
+
+baseURL = "https://cnf-sites.github.io/cnf-blog-congo/"
+languageCode = "en"
+
+paginate = 6
+
+timeout = 60000

@@ -1,0 +1,29 @@
+# config/_default/params.toml
+
+colorScheme = "congo"
+defaultAppearance = "dark"
+showAppearanceSwitcher = true
+
+enableCodeCopy = true
+showScrollToTop = true
+
+contactFormdId = "xrgjjnrr"
+
+[homepage]
+  layout = "profile"
+  showRecent = true
+
+[article]
+  showDateUpdated = true
+  showBreadcrumbs = false
+  showTableOfContents = true
+  showComments = false
+  sharingLinks = ["facebook", "twitter", "reddit", "linkedin"]
+
+[list]
+  showSummary = true
+  groupByYear = false
+
+[verification]
+  google = ""
+  bing = ""

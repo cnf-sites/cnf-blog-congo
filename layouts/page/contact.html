@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div class="py-3"></div>
+<form action="https://formspree.io/f/{{.Site.Params.contactFormdId}}" method="post">
+    <div class="py-3">
+        <label>Your name</label>
+    </div>
+    <div class="min-h-0 mx-auto border rounded-md border-neutral-200 top-20 bg-neutral dark:bg-neutral-800 dark:border-neutral-700">
+        <input type="text" name="name" class="w-full px-2 h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-transparent focus:outline-2" placeholder="Your name">
+    </div>
+    <div class="py-3">
+        <label>Your email*</label>
+    </div>
+    <div class="min-h-0 mx-auto border rounded-md border-neutral-200 top-20 bg-neutral dark:bg-neutral-800 dark:border-neutral-700">
+        <input type="email" name="email" class="w-full px-2 h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-transparent focus:outline-2" placeholder="Your email" required>
+    </div>
+    <div class="py-3">
+        <label>Your message*</label>
+    </div>
+    <div class="min-h-0 mx-auto border rounded-md border-neutral-200 top-20 bg-neutral dark:bg-neutral-800 dark:border-neutral-700">
+        <textarea name="message" rows="5" class="px-2 w-full mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-transparent focus:outline-2" placeholder="Your message" required></textarea>
+    </div>
+    <div class="py-3">
+        <div class="px-4 py-2 !text-neutral !no-underline !rounded-md bg-primary-600 hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700">
+            <input class="" type="submit" value="Send message">
+        </div>
+    </div>
+  </form>
+</div>
+
+{{ end }}

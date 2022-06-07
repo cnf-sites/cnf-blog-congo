@@ -1,0 +1,16 @@
+# config/_default/languages.en.toml
+
+title = "CodeNotFound"
+description = "Talk is cheap. Show me the code. CodeNotFound is the place for free tutorials and coding tips!"
+copyright = "© 2022 CodeNotFound - CC BY-NC-ND"
+
+[author]
+name = "CodeNotFound"
+image = "img/author.png"
+headline = "Free Tutorials and Coding Tips."
+bio = "Talk is cheap. Show me the code."
+links = [
+  { github = "https://github.com/code-not-found" },
+  { stack-overflow = "https://stackoverflow.com/users/4201470/codenotfound" },
+  { twitter = "https://twitter.com/CodeNotFoundcom" }
+]
