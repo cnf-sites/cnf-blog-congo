@@ -1,0 +1,18 @@
+@media (min-width:640px) {
+    figure.banner>img {
+        margin: 0px 0px 16px 16px;
+        height: 220px;
+        width: 220px;
+        float: right;
+    }
+}
+
+@media (max-width:640px) {
+    figure.banner>img {
+        height: 220px;
+        width: 220px;
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+}
