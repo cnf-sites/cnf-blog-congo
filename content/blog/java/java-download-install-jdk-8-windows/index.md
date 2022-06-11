@@ -1,14 +1,21 @@
 ---
-title: "Java - Download and Install JDK 1.8 on Windows"
-summary: "A detailed step-by-step tutorial on how to download and install jdk 8u172 on Windows."
+title: "How to Download and Install JDK 1.8 on Windows"
+summary: "A detailed step-by-step tutorial on how to download and install JDK 8u331 on Windows 10."
 url: /java-download-install-jdk-8-windows.html
 date: 2018-01-09
-lastmod: 2018-01-09
+lastmod: 2022-06-09
 tags: ["posts", "java", "jdk"]
+showComments: true
 draft: false
 ---
 
-This tutorial has everything you need to know about installing JDK 8 on Windows.
+{{< figure
+    src="download-install-jdk-8-windows.png"
+    alt="download install jdk 8 windows"
+    class="article-cover"
+    >}}
+
+This tutorial has **everything you need to know** about installing JDK 8 on Windows.
 
 If you're new to Java, I'll show you how to setup the Java Development Kit.
 
@@ -18,80 +25,172 @@ Bottom line:
 
 If you want to get up and running with Java, **you'll love this tutorial**.
 
-## JDK Download & Install
-
-[Java](https://www.java.com/en/) is a computer programming language that is concurrent, class-based and object-oriented. Java applications compile to bytecode (class file) that can then run on a Java Virtual Machine (JVM).
-
-James Gosling created Java at Sun Microsystems. It is currently owned by the Oracle Corporation.
-
 {{< alert "lightbulb" >}}
 Check following guides if you are looking to download and install [JDK 1.5]({{< ref "/blog/java/java-download-install-jdk-5-windows" >}}), [JDK 1.6]({{< ref "/blog/java/java-download-install-jdk-6-windows" >}}), [JDK 1.7]({{< ref "/blog/java/java-download-install-jdk-7-windows" >}}), [JDK 1.9]({{< ref "/blog/java/java-download-install-jdk-9-windows" >}}) or [JDK 1.10]({{< ref "/blog/java/java-download-install-jdk-10-windows" >}}).
 {{< /alert >}}
 
-Java can be obtained from the Oracle Java download page. There are a number of [different Java packages available](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html), for this tutorial we will be installing Java Standard Edition (SE) on Windows.
+## What is a JDK?
 
-In order to be able to compile Java code, we need the Java Development Kit (JDK) package that comes with a Java compiler. The JDK package also comes with a Java runtime environment (JRE) that is needed to run compiled Java code.
+When you want to create a Java application you need a [Java Development Kit](https://en.wikipedia.org/wiki/Java_Development_Kit) (JDK). It contains tools that allow you to develop and run your Java program.
 
-Scroll to the `Java SE 8u171/ 8u172` section in the middle of the [Oracle Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and click on the `Download` button right below `JDK`. Then look for the `Java SE Development Kit 8u172` section.
+![java development kit tools](java-development-kit-tools.png)
 
-> Here is the direct link to [download the jdk 8u172 installer for Windows 32 or 64 bit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+One of these development tools is a **compiler** (javac) that converts Java source code (`.java` files) into Java bytecode (`.class` files). Other tools include an archiver (jar) and a documentation generator (javadoc).
 
-Accept the License Agreement and pick the correct download for your operating system. In this example, we will use the Windows 64 bit version.
+The JDK also contains a **Java Runtime Environment** (JRE) that is able to run compiled Java code. To do this the JRE uses Java libraries and a Java Virtual Machine (JVM) that executes the compiled Java code.
 
-![java 8 download jdk](java-8-download-jdk.png)
+Different JDK implementations are available. The official reference implementation is maintained by [Oracle](https://www.oracle.com/index.html).
 
-Sign in using your Oracle account (or create a new one) and the download should start. Once the download is complete, locate the `jdk-8u172-windows-x64.exe` file and double-click to run the installer.
+> Note that [Oracle has changed the license of their JDK](https://www.oracle.com/java/technologies/javase/jdk-faqs.html). Instead of having a single JDK build which you can use for free, they now have two different JDK builds:
 
-![java 8 installer start](java-8-installer-start.png)
+* [Oracle’s JDK](https://www.oracle.com/java/technologies/downloads/) (commercial) – you can use this in development and testing for free, but if you use it in production you have to pay for it.
+* [Oracle’s OpenJDK](https://jdk.java.net/java-se-ri/8-MR3) (open source) – you can use this for free in any environment.
 
-Click `Next` and on the following screen optionally change the installation location by clicking on the `Change...` button. In this example the default install location of `'C:\Program Files\Java\jdk1.8.0_172\'` was kept. From now on we will refer to this directory as: `[java_install_dir]`.
+## Download Oracle JDK 8
 
-![java 8 jdk location](java-8-jdk-location.png)
+Head over to the [Oracle Java SE 8 download page](https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html).
 
-We will not install the public JRE as the JDK Development tools include a private JRE that can run developed code. Select the `Public JRE` dropdown and click on `This feature will not be available.` as shown below.
+![java 8 oracle jdk download page](java-8-oracle-jdk-download-page.png)
 
-![java 8 public jre location](java-8-public-jre-location.png)
+Look for the `Java SE Development Kit 8u331` section.
 
-Click `Next` and then `Close` to finish installing Java.
+[Verify your windows bit version](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d) and click on the corresponding link:
 
-![java 8 installer finish](java-8-installer-finish.png)
+* For 32-bit = Windows x86 installer
+* For 64-bit = Windows x64 installer
 
-## JDK Configuration
+In this guide, we will download the 64-bit installer: `jdk-8u331-windows-x64.exe`.
 
-In order for Java applications to be able to run we need to setup a `JAVA_HOME` environment variable that will point to the Java installation directory. In addition, if we want to run Java commands from a command prompt we need to setup the `'PATH'` environment variable to contain the Java bin directory.
+![java 8 oracle jdk download link](java-8-oracle-jdk-download-link.png)
 
-When using Windows the above parameters can be configured on the Environment Variables panel. Click on the `Windows Start` button and enter `env` without quotes as shown below.
+Accept the license pop-up and click on the `Download jdk-8u331-windows-x64.exe` button.
 
-![edit environment variables](edit-environment-variables.png)
+![java 8 oracle jdk download license](java-8-oracle-jdk-download-license.png)
 
-Environment variables can be set at account level or at system level. For this example click on `Edit environment variables for your account` and following panel should appear.
+You will need an Oracle account in order to download the JDK. Sign in with an existing account or create a new account to continue.
 
-![environment variables](environment-variables.png)
+![oracle account sign in](oracle-account-sign-in.png)
 
-Click on the `New` button and enter `JAVA_HOME` as variable name and the `[java_install_dir]` as variable value. In this tutorial the installation directory is `'C:\Program Files\Java\jdk1.8.0_172'`. Click `OK` to to save.
+Wait for the download to complete.
 
-![java 8 set home](java-8-set-home.png)
+## Install Oracle JDK 8
 
-Click on the `New` button and enter `PATH` as variable name and `%JAVA_HOME%\bin` as variable value. Click `OK` to save.
+Open the location of the downloaded executable.
 
-> Note that in case a `'PATH'` variable is already present you can add `;%JAVA_HOME%\bin` at the end of the variable value.
+![windows java 8 oracle jdk installer executable](windows-java-8-oracle-jdk-installer-executable.png)
 
-![java set path](java-set-path.png)
+Double-click to run the installer.
 
-The result should be as shown below. Click `OK` to close the environment variables panel.
+On Windows 10 a pop-up window will appear: `The app you're trying to install isn't a Microsoft-verified app`
 
-![java 8 environment variables](java-8-environment-variables.png)
+Click on `Install anyway`.
 
-In order to test the above configuration, open a command prompt by clicking on the Windows Start button and typing `cmd` followed by pressing `ENTER`. A new command prompt should open in which the following command can be entered to verify the installed Java version:
+![windows app not microsoft verified](windows-app-not-microsoft-verified.png)
 
-``` bash
+The JDK installer will start. Click `Next`.
+
+![java 8 oracle jdk installer start](java-8-oracle-jdk-installer-start.png)
+
+You can change the installation location by clicking on the `Change…` button.
+
+In this example, we keep the default install location of `C:\Program Files\Java\jdk1.8.0_331`. From now on we will refer to this directory as `[JAVA_INSTALL_DIR]`.
+
+![java 8 oracle jdk installer jdk location](java-8-oracle-jdk-installer-jdk-location.png)
+
+We will not install the public JRE as the JDK development tools already include a private JRE.
+
+Select the `Public JRE` dropdown and click on `This feature will not be available`. as shown below.
+
+![java 8 oracle jdk installer disable public jre](java-8-oracle-jdk-installer-disable-public-jre.png)
+
+Click `Next` to start the installation.
+
+![java 8 oracle jdk installer custom setup](java-8-oracle-jdk-installer-custom-setup.png)
+
+The JDK installation will now start.
+
+A progress bar shows the various steps that are executed.
+
+![java 8 oracle jdk installer progres](java-8-oracle-jdk-installer-progres.png)
+
+Once the installation is complete, click `Close`.
+
+![java 8 oracle jdk installer finish](java-8-oracle-jdk-installer-finish.png)
+
+## Configure Oracle JDK 8
+
+Now that the JDK is installed we need to configure it.
+
+First we set up an environment variable that will point to our JDK installation.
+
+In the Windows search box type `env`.
+
+Click on the `Edit environment variables for your account shortcut`.
+
+![windows edit environment variables for your account](windows-edit-environment-variables-for-your-account.png)
+
+Wait for the environment variables window to open.
+
+Click on `New…`.
+
+![windows environment variables new](windows-environment-variables-new.png)
+
+Enter `JAVA_HOME` as variable name. Enter the `[JAVA_INSTALL_DIR]` as variable value.
+
+In this tutorial, the Java installation directory is `C:\Program Files\Java\jdk1.8.0_331`.
+
+Click `OK`.
+
+![windows new user variable java home](windows-new-user-variable-java-home.png)
+
+Next, we need to configure the PATH environment variable so we can run Java from a command prompt.
+
+Select the `Path` variable. Click on `Edit…`.
+
+![windows environment variables edit path](windows-environment-variables-edit-path.png)
+
+Click on `New` and type `%JAVA_HOME%\bin` as shown below.
+
+Click `OK`.
+
+![windows edit environment variable java home](windows-edit-environment-variable-java-home.png)
+
+Click `OK` once more to close the environment variables window.
+
+![windows environment variables java home](windows-environment-variables-java-home.png)
+
+> If a Path variable does not exist you need to create it. Use `Path` as variable name and `%JAVA_HOME%\bin` as variable value.
+
+## Test the Oracle JDK 8 Installation
+
+Let’s test the setup.
+
+Click on the search button. Then type `cmd`.
+
+Click on the `Command Prompt` shortcut.
+
+![windows open command prompt](windows-open-command-prompt.png)
+
+Wait for the command prompt to open.
+
+Type below command and press ENTER.
+
+``` shell
 java -version
 ```
 
-The result should be as shown below.
+![windows cmd java version](windows-cmd-java-version.png)
 
-![java 8 version](java-8-version.png)
+The above command prints the installed JDK version: 1.8.0_331.
 
-This concludes the setting up and configuring JDK 1.8 on Windows.
+![windows cmd java version jdk 8](windows-cmd-java-version-jdk-8.png)
 
-If you found this post helpful or have any questions or remarks, please leave a comment.
+**Congratulations, you have installed JDK 1.8 on Windows 10!**
+
+Now take the next step and [write your first Java program](https://introcs.cs.princeton.edu/java/11hello/).
+
+Let me know if you liked this post.
+
+Leave a comment below.
+
+Thanks!!
