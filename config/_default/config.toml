@@ -6,3 +6,5 @@ languageCode = "en"
 paginate = 6
 
 timeout = 60000
+
+ignoreFiles = ['\.svg$']
