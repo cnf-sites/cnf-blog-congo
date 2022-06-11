@@ -4,7 +4,9 @@ baseURL = "https://cnf-sites.github.io/cnf-blog-congo"
 languageCode = "en"
 
 paginate = 6
-
 timeout = 60000
-
 ignoreFiles = ['\.svg$']
+
+[imaging]
+  quality = 75
+  resampleFilter = 'MitchellNetravali'
