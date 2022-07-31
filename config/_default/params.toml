@@ -2,12 +2,14 @@
 
 colorScheme = "congo"
 defaultAppearance = "dark"
-showAppearanceSwitcher = true
 
 enableCodeCopy = true
-showScrollToTop = true
 
 contactFormdId = "xrgjjnrr"
+
+[footer]
+  showAppearanceSwitcher = true
+  showScrollToTop = true
 
 [homepage]
   layout = "profile"
