@@ -18,6 +18,7 @@ contactFormdId = "xrgjjnrr"
 [article]
   showDate = false
   showDateUpdated = true
+  showAuthor = false
   showBreadcrumbs = false
   showTableOfContents = true
   showComments = false
