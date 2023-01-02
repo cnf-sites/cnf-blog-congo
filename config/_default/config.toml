@@ -1,6 +1,6 @@
 # config/_default/config.toml
 
-baseURL = "https://cnf-sites.github.io/cnf-blog-congo"
+baseURL = "https://codenotfound.com"
 languageCode = "en"
 
 paginate = 6
