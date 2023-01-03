@@ -10,3 +10,6 @@ ignoreFiles = ['\.svg$']
 [imaging]
   quality = 75
   resampleFilter = 'MitchellNetravali'
+
+# version 4
+googleAnalytics = "G-SY723D2W58"
