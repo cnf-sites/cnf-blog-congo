@@ -21,7 +21,7 @@ contactFormdId = "xrgjjnrr"
   showAuthor = false
   showBreadcrumbs = false
   showTableOfContents = true
-  showComments = false
+  showComments = true
   sharingLinks = ["facebook", "twitter", "reddit", "linkedin"]
 
 [list]
