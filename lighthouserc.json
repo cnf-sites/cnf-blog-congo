@@ -2,7 +2,18 @@
     "ci": {
         "collect": {
             "staticDistDir": "./public",
+            "numberOfRuns": 1,
             "maxAutodiscoverUrls": 0
+        },
+        "assert": {
+            "assertions": {
+                "categories:seo": [
+                    "error",
+                    {
+                        "minScore": 1
+                    }
+                ]
+            }
         }
     }
 }
