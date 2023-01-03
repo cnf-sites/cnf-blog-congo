@@ -1,7 +1,7 @@
 # config/_default/params.toml
 
 colorScheme = "congo"
-defaultAppearance = "dark"
+defaultAppearance = "light"
 
 enableCodeCopy = true
 
