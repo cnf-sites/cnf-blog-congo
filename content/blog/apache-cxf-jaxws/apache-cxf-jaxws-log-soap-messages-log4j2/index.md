@@ -33,7 +33,7 @@ Specifying the interceptors via configuration files offers two benefits over pro
 1. Logging requirements **can be altered without needing to recompile the code**.
 2. **No Apache CXF-specific APIs need to be added to your code**, which helps it remain interoperable with other JAX-WS compliant web service stacks.
 
-For this example [Log4j2](https://logging.apache.org/log4j/2.x/) will be used which is an upgrade of the [Log4j](https://logging.apache.org/log4j/1.2/) project. As a best practice the CXF `java.util.logging` calls will first be redirected to [SLF4J](http://www.slf4j.org/) (Simple Logging Facade for Java) as described [here](https://cxf.apache.org/docs/debugging-and-logging.html#DebuggingandLogging-UsingSLF4JInsteadofjava.util.logging%28since2.2.8%29). In other words a `META-INF/cxf/org.apache.cxf.Logger` file will be created on the classpath containing the following:
+For this example [Log4j2](https://logging.apache.org/log4j/2.x/) will be used which is an upgrade of the [Log4j](https://logging.apache.org/log4j/1.2/) project. As a best practice the CXF `java.util.logging` calls will first be redirected to [SLF4J](http://www.slf4j.org/) (Simple Logging Facade for Java) as described on [Debugging and Logging](https://cxf.apache.org/docs/debugging-and-logging.html#DebuggingandLogging-UsingSLF4JInsteadofjava.util.logging%28since2.2.8%29). In other words a `META-INF/cxf/org.apache.cxf.Logger` file will be created on the classpath containing the following:
 
 ``` text
 org.apache.cxf.common.logging.Slf4jLogger

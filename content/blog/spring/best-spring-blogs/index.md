@@ -16,17 +16,17 @@ As today I'm sharing my favorite resources for learning about the Spring framewo
 
 So without further ado, let's get started…
 
-## 1. [The Spring Blog](https://spring.io/blog)
+## 1. The Spring Blog
 
 ![spring blog](spring-blog.png)
 
-This one might be an obvious pick as the Spring Team maintains a Spring blog.
+This one might be an obvious pick as the Spring Team maintains a [Spring blog](https://spring.io/blog).
 
 It contains the newest releases of the different Spring frameworks. You'll also find several tutorials and detailed how-to guides. As well as announcements and the latest news and events around the Spring community.
 
 Favorite post(s): [This week in Spring posts by Josh Long](https://spring.io/team/joshlong)
 
-## 2. [CodeNotFound](https://codenotfound.com/blog/)
+## 2. CodeNotFound
 
 ![codenotfound blog](codenotfound-blog.png)
 
@@ -34,35 +34,35 @@ Good news. You already know this one, as you're reading it right now :-). For th
 
 Favorite post: [Spring Kafka - Consumer Producer Example](https://www.codenotfound.com/spring-kafka-consumer-producer-example.html)
 
-## 3. [Baeldung](https://www.baeldung.com/category/spring/)
+## 3. Baeldung
 
 ![baeldung blog](baeldung-blog.png)
 
-Eugen Paraschiv started the Baeldung blog back in September 2011. Chances are you have already visited his site as it has a ton of tutorials on Spring.
+Eugen Paraschiv started the [Baeldung blog](https://www.baeldung.com/category/spring/) back in September 2011. Chances are you have already visited his site as it has a ton of tutorials on Spring.
 
 Favorite post: [Spring Security for a REST API](https://www.baeldung.com/securing-a-restful-web-service-with-spring-security)
 
-## 4. [Mkyong](https://www.mkyong.com/tutorials/spring-boot-tutorials/)
+## 4. Mkyong
 
 ![mkyong blog](mkyong-blog.png)
 
-Mkyong has been around for almost 10 years. Yong Mook Kim, aka Mkyong, is the author of the site. The blog has a huge amount of articles. Even though some articles are a bit dated they still provide a good starting point to learn.
+[Mkyong](https://www.mkyong.com/tutorials/spring-boot-tutorials/) has been around for almost 10 years. Yong Mook Kim, aka Mkyong, is the author of the site. The blog has a huge amount of articles. Even though some articles are a bit dated they still provide a good starting point to learn.
 
 Favorite post: [Spring Boot + Hibernate Search example](http://www.mkyong.com/spring-boot/spring-boot-hibernate-search-example/)
 
-## 5. [Spring Framework Guru](https://springframework.guru/blog/)
+## 5. Spring Framework Guru
 
 ![spring framework guru blog](spring-framework-guru-blog.png)
 
-Spring Framework Guru is run by John Thompson. You'll find lots of detailed Spring tutorials. Not only that but it is the only Spring blog with such an iconic logo.
+[Spring Framework Guru](https://springframework.guru/blog/) is run by John Thompson. You'll find lots of detailed Spring tutorials. Not only that but it is the only Spring blog with such an iconic logo.
 
 Favorite post: [Using Logback With Spring Boot](https://springframework.guru/using-logback-spring-boot/)
 
-## 6. [Petri Kainulainen](https://www.petrikainulainen.net/tutorials/)
+## 6. Petri Kainulainen
 
 ![petrikainulainen blog](petrikainulainen-blog.png)
 
-Petri Kainulainen is a software developer who lives in Tampere, Finland. Lately, he focusses on Java testing although there are still a lot of Spring guides on his site.
+[Petri Kainulainen](https://www.petrikainulainen.net/tutorials/) is a software developer who lives in Tampere, Finland. Lately, he focusses on Java testing although there are still a lot of Spring guides on his site.
 
 Favorite post: [Spring Batch Tutorial: Creating a Custom ItemReader](https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-creating-a-custom-itemreader/)
 

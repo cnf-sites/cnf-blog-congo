@@ -6,8 +6,7 @@ date: 2017-11-19
 lastmod: 2017-11-19
 tags: ["posts", "java", "jdk"]
 draft: false
-externalUrl:
-  - https://downlinko.com/download-install-jdk-5-windows.html
+externalUrl: https://downlinko.com/download-install-jdk-5-windows.html
 ---
 
 [Java](https://www.java.com/en/) is a computer programming language that is concurrent, class-based and object-oriented. It was originally developed by James Gosling at Sun Microsystems. Java applications are compiled to bytecode (class file) that can run on any Java virtual machine (JVM) regardless of computer architecture.
@@ -42,7 +41,7 @@ Click on the `I accept the terms in the license agreement` radio button and then
 
 Next, the installer will present the installation of some optional features. We will skip this part of the installer as the JDK installed in the previous step comes with everything to run and develope code. Just press `Cancel` and confirm by clicking `Yes` in the popup window.
 
-![java 5 optional features](java-5-optional-features.png)
+![java 5 custom setup](java-5-custom-setup.png)
 
 Click `Next` and then `Close` to finish installing Java.
 
